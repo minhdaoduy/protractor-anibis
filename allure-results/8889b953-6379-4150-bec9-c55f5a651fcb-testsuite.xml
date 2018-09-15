@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1536734226110' stop='1536734241442'>
+    <name>Automation BankManager Login functionality</name>
+    <title>Automation BankManager Login functionality</title>
+    <test-cases>
+        <test-case start='1536734226111' status='passed' stop='1536734230149'>
+            <name>Login to the Bank Manager account</name>
+            <title>Login to the Bank Manager account</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1536734230150' status='passed' stop='1536734234651'>
+            <name>Validate Add Customer</name>
+            <title>Validate Add Customer</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1536734234651' status='passed' stop='1536734239098'>
+            <name>Validate Open Account</name>
+            <title>Validate Open Account</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1536734239098' status='passed' stop='1536734241442'>
+            <name>Validate Customer Existance</name>
+            <title>Validate Customer Existance</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
