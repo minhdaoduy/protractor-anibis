@@ -54,4 +54,63 @@ ActionHelper.prototype.expectedConditions = async function (webElement, expected
     
 }
 
+//wait element for element clickable, then click
+ActionHelper.prototype.clickElementClickable = async function (webElement) {
+    let error = '';
+    for (let i = 0; i < browser.actionRetryTime; i++) {
+        try {
+            await this.waitForElementToBeClickable(webElement);
+            await webElement.click();
+            error = '';
+            break;
+        } catch (e) {
+            error = e;
+            browser.sleep(500);
+        }
+        if (error !== '')
+            throw error;
+    }
+    
+}
+
+//wait element for element present, then click
+ActionHelper.prototype.clickElementPresent = async function (webElement) {
+    let error = '';
+    for (let i = 0; i < browser.actionRetryTime; i++) {
+        try {
+            await this.waitForPresentOf(webElement);
+            await webElement.click();
+            error = '';
+            break;
+        } catch (e) {
+            error = e;
+            browser.sleep(500);
+        }
+        if (error !== '')
+            throw error;
+    }
+    
+}
+
+//wait element for element visible, then input
+ActionHelper.prototype.sendKeyElement = async function (webElement, text) {
+    let error = '';
+    for (let i = 0; i < browser.actionRetryTime; i++) {
+        try {
+            await this.waitForVisibilityOf(webElement);
+            await webElement.clear();
+            await webElement.sendKeys(text);
+            error = '';
+            break;
+        } catch (e) {
+            error = e;
+            browser.sleep(500);
+        }
+        if (error !== '')
+            throw error;
+    }
+    
+}
+
+
 module.exports = new ActionHelper();
