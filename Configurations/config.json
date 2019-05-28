@@ -1,0 +1,8 @@
+{
+    "config" : {
+        "reportDir": "report",
+        "dbServer": "",
+        "dbUser": "",
+        "dbPass": ""
+    }
+}

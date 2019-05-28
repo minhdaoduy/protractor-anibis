@@ -1,22 +1,25 @@
 let HtmlReporter = require('protractor-beautiful-reporter');
 let Testrail = require('testrail-api');
-let jsonHelper = require();
+let jsonHelper = require('./infrastructure/helpers/json.helper.js');
 let path = require('path');
 let log4js = require('log4js');
 let fs = require('fs');
 let winston = require('winston');
 let q = require('q');
-const levels = { 
-    error: 0, 
-    warn: 1, 
-    info: 2, 
-    verbose: 3, 
-    debug: 4, 
-    silly: 5 
-  };
-const { createLogger, format, transports } = require('winston');
-const {  timestamp,combine, label, prettyPrint } = format;
+const currentDate = new Date(),
+day = currentDate.getDate(),
+month = currentDate.getMonth(),
+year = currentDate.getFullYear(),
+hour = currentDate.getHours(),
+minute = currentDate.getMinutes(),
+second = currentDate.getSeconds(),
+millisecond = currentDate.getMilliseconds();
+const reportFol = 'report_' + day + "." + month + "." + year + "." + hour + "." + minute + "." + second + "." + millisecond;
 exports.config = {
+    params: {
+        reportLocation: '',
+        lstTestCaseId: []
+    },
     directConnect: true,
 
     // Capabilities to be passed to the webdriver instance.
@@ -43,17 +46,6 @@ exports.config = {
     restartBrowserBetweenTests: false,
 
     onPrepare: async function () {
-        var AllureReporter = require('jasmine-allure-reporter');
-        jasmine.getEnv().addReporter(new AllureReporter());
-        jasmine.getEnv().afterEach(function(done){
-            browser.takeScreenshot().then(function (png) {
-                allure.createAttachment('Screenshot', function () {
-                    return new Buffer(png, 'base64')
-                }, 'image/png')();
-                done();
-            })
-        });
-
         log4js.configure({
             appenders: {
                 klog: {
@@ -87,8 +79,34 @@ exports.config = {
         //Init and Add logger into browser
         browser.logger = log4js.getLogger('Logger');
 
+        //Add screenshot to report
+        jasmine.getEnv().addReporter(new HtmlReporter({
+            preserveDirectory: true,
+            takeScreenShotsOnlyForFailedSpecs: true,
+            docTitle: 'Acuity',
+            screenshotsSubfolder: 'image',
+            jsonSubfolder: 'json',
+            baseDirectory: jsonHelper.readConfig('reportDir'),
+            pathBuilder: function pathBuilder (spec, description, result, capabilities) {
+                let validDescriptions = description.map(function (description) {
+                    return description.replace(/\//g, '@');
+                })
+
+                return path.join(
+                    reportFol,
+                    validDescriptions.join('-')
+                );
+            }
+        }).getJasmine2Reporter());
+
+        browser.params.reportLocation = jsonHelper.readConfig('reportDir') + '/' + reportFol;
+    },
+
+    jasmineNodeOpts: {
+        // If true, print colors to the terminal.
+        showColors: true,
+        // Default time to wait in ms before a test fails.
+        defaultTimeoutInterval: 9999999,
     }
-
-
-}
+};
 

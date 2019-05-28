@@ -38,4 +38,25 @@ class JsonHelper {
         fs.writeFileSync(filePath, JSON.stringify(result));
     }
 
+    static cleanJsonData(filePath) {
+        //Import the fs module
+        const fs = require('fs');
+        fs.writeFileSync(filePath, JSON.stringify({}));
+    }
+
+    //Read the config file
+    static readConfig(configKey) {
+        //Import the fs module
+        const fs = require('fs');
+
+        //Read the json file into row data
+        let rowData = fs.readFileSync('Configurations/config.json');
+
+        //parse the row data in to Json format
+        let result = JSON.parse(rowData);
+
+        return result['config'][configKey];
+    }
+
 }
+module.exports = JsonHelper;
