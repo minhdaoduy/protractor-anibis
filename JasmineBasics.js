@@ -22,7 +22,7 @@ describe("this is a selection", function () {
 
         });
         it("Test case 2", function (done) {
-
+            browser.logger.info('sdfdsfsdfsdfsd');
 
         });
 

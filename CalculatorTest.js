@@ -1,53 +1,56 @@
 describe("Validation the Calculator App",function () {
 
-    browser.driver.manage().window().maximize();
+    // browser.driver.manage().window().maximize();
     browser.get("http://www.way2automation.com/angularjs-protractor/calc/");
 
-    beforeEach(function () {
+    beforeEach(async function () {
 
-        console.log("Setting up before starting a step");
+        await browser.logger.info("Setting up before starting a step");
     });
 
-    afterEach(function () {
+    afterEach(async function () {
 
-        browser.sleep(3000);
-        console.log("Ending of a step");
+        await browser.sleep(3000);
+        await browser.logger.info("Ending of a step");
     });
 
-    it("validate 1 + 1 = 2",function () {
-        element(by.model("first")).sendKeys("1");
-        element(by.model("second")).sendKeys("1");
-        element(by.buttonText("Go!")).click();
+    it("Step 1 validate 1 + 1 = 2",async function () {
+        await browser.logger.info("===========================================");
+        await browser.logger.info("Step 1 validate 1 + 1 = 2");
+        await element(by.model("first")).sendKeys("1");
+        await element(by.model("second")).sendKeys("1");
+        await element(by.buttonText("Go!")).click();
 
-        element(by.binding("latest")).getText().then(function (text) {
+        let text = await element(by.binding("latest")).getText();
 
-            console.log("result is: " + text);
-        });
+        await browser.logger.info("result is: " + text);
+
     });
 
-    it("validate 2 + 2 = 4",function () {
+    it("validate 2 + 2 = 4", async function () {
 
+        await browser.logger.info("===========================================");
+        await browser.logger.info("Step 2 validate 2 + 2 = 4");
         // browser.get("http://www.way2automation.com/angularjs-protractor/calc/");
-        element(by.model("first")).sendKeys("2");
-        element(by.model("second")).sendKeys("2");
-        element(by.buttonText("Go!")).click();
+        await element(by.model("first")).sendKeys("2");
+        await element(by.model("second")).sendKeys("2");
+        await element(by.buttonText("Go!")).click();
 
-        element(by.binding("latest")).getText().then(function (text) {
+        let text = await element(by.binding("latest")).getText();
 
-            console.log("result is: " + text);
-        });
+        await browser.logger.info("result is: " + text);
     });
 
-    it("validate 3 + 3 = 6",function () {
-
+    it("validate 3 + 3 = 6", async function () {
+        await browser.logger.info("===========================================");
+        await browser.logger.info("Step 2 validate 3 + 3 = 6");
         // browser.get("http://www.way2automation.com/angularjs-protractor/calc/");
-        element(by.model("first")).sendKeys("3");
-        element(by.model("second")).sendKeys("3");
-        element(by.buttonText("Go!")).click();
+        await element(by.model("first")).sendKeys("3");
+        await element(by.model("second")).sendKeys("3");
+        await element(by.buttonText("Go!")).click();
 
-        element(by.binding("latest")).getText().then(function (text) {
+        let text = await element(by.binding("latest")).getText();
 
-            console.log("result is: " + text);
-        });
+        await browser.logger.info("result is: " + text);
     });
 });

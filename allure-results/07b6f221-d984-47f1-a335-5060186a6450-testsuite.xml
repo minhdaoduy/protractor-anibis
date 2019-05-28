@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1559014748577' stop='1559014767647'>
+    <name>Validation the Calculator App</name>
+    <title>Validation the Calculator App</title>
+    <test-cases>
+        <test-case start='1559014748578' status='passed' stop='1559014756987'>
+            <name>Step 1 validate 1 + 1 = 2</name>
+            <title>Step 1 validate 1 + 1 = 2</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='2cabbff3-2f68-42e5-9aba-dfe7e11fd714-attachment.png' type='image/png' size='18251'/>
+            </attachments>
+        </test-case>
+        <test-case start='1559014756987' status='passed' stop='1559014762318'>
+            <name>validate 2 + 2 = 4</name>
+            <title>validate 2 + 2 = 4</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='da24e795-ae4a-43d6-ad74-e57c8c3cf65e-attachment.png' type='image/png' size='19375'/>
+            </attachments>
+        </test-case>
+        <test-case start='1559014762318' status='passed' stop='1559014767647'>
+            <name>validate 3 + 3 = 6</name>
+            <title>validate 3 + 3 = 6</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='e11f2330-f004-47cc-be32-000ae746e0c3-attachment.png' type='image/png' size='21162'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
