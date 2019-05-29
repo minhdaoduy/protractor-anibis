@@ -13,9 +13,9 @@ ActionHelper.prototype.waitForElementToBeClickable = async function (webElement)
     await this.expectedConditions(webElement, 'waitForElementToBeClickable');
 }
 
-//Wait for Element present, rety maximum 5 time and each time maximum wait for 5s
-ActionHelper.prototype.waitForPresentOf = async function (webElement) {
-    await this.expectedConditions(webElement, 'waitForPresentOf');
+//Wait for Element presence, rety maximum 5 time and each time maximum wait for 5s
+ActionHelper.prototype.waitForPresenceOf = async function (webElement) {
+    await this.expectedConditions(webElement, 'waitForPresenceOf');
 }
 
 //master for wait element
@@ -24,9 +24,9 @@ ActionHelper.prototype.expectedConditions = async function (webElement, expected
     for (let i = 0; i < browser.expectConditionRetryTime; i++) {
         try {
             switch (expectedCondition) {
-                case 'waitForPresentOf':
+                case 'waitForPresenceOf':
                     await browser.waits(
-                        protractor.ExpectedConditions.presentOf(webElement),
+                        protractor.ExpectedConditions.presenceOf(webElement),
                         browser.timeoutInterval
                     );
                     break;
@@ -73,12 +73,12 @@ ActionHelper.prototype.clickElementClickable = async function (webElement) {
     
 }
 
-//wait element for element present, then click
-ActionHelper.prototype.clickElementPresent = async function (webElement) {
+//wait element for element presence, then click
+ActionHelper.prototype.clickElementPresence = async function (webElement) {
     let error = '';
     for (let i = 0; i < browser.actionRetryTime; i++) {
         try {
-            await this.waitForPresentOf(webElement);
+            await this.waitForPresenceOf(webElement);
             await webElement.click();
             error = '';
             break;
@@ -109,8 +109,43 @@ ActionHelper.prototype.sendKeyElement = async function (webElement, text) {
         if (error !== '')
             throw error;
     }
-    
 }
 
+/**
+ * Quick check if element presnt on dom
+ * @param webElement
+ * @return {Promise.<boolean>}
+ */
+ActionHelper.prototype.isElementPresence = async function (webElement) {
+    this.verifyElementDisplayOrNot(webElement);
+}
+
+/**
+ * Quick check if element presnt on dom
+ * @param webElement
+ * @return {Promise.<boolean>}
+ */
+ActionHelper.prototype.isElementNotDisplay = async function (webElement) {
+    this.verifyElementDisplayOrNot(webElement, false);
+}
+
+ActionHelper.prototype.verifyElementDisplayOrNot = async function (webElement, isDisplay = true) {
+    let error = '';
+    try {
+        if (isDisplay)
+            await browser.wait(
+                protractor.ExpectedConditions.presenceOf(webElement),
+                browser.timeoutInterval
+            );
+        else 
+            await browser.wait(
+                protractor.ExpectedConditions.invisibilityOf(webElement),
+                browser.timeoutInterval
+            );
+    } catch (e) {
+        error = e;
+    }
+    return error === '';
+}
 
 module.exports = new ActionHelper();
