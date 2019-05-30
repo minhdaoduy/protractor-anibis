@@ -20,7 +20,8 @@ exports.config = {
         reportLocation: '',
         lstTestCaseId: []
     },
-    directConnect: true,
+   // seleniumAddress: 'http://localhost:4444/wd/hub',
+   directConnect: true,
 
     // Capabilities to be passed to the webdriver instance.
    capabilities: {
@@ -32,11 +33,17 @@ exports.config = {
      shardTestFiles: true,
      chromeOptions: {
          useAutomationExtension: false,
+         prefs: {
+             'download': {
+                 'prompt_for_download': false,
+                 'default_directory': 'C:\\DataExport',
+                 'directory_upgrade': true
+             }
+         }
      }
    },
 
     framework: 'jasmine2',
-   // seleniumAddress: 'http://localhost:4444/wd/hub',
 
     suites: {
         smoke: ['CalculatorTest.js'],
