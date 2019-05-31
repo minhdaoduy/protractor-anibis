@@ -97,4 +97,30 @@ class ArrayHelper {
         }
         return array
     }
+    
+    static concatenateUniqueValue (array, subArray) {
+        for (let i = 0; i < subArray.length; i++) {
+            result = array.includes(subArray[i])
+            if (!result) array.push(subArray[i]);
+        }
+        return array
+    }
+    
+    static trimArray (array = []) {
+        if (array.length > 0) {
+            for (let i = 0; i < array.length; i++) {
+                array[i] = array[i].trim();
+            }
+        }
+        
+        return array
+    }
+    
+    static removeNode (array, node) {
+        let result = []
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] !== node) result.push(array[i]);
+        }
+        return result
+    }
 }

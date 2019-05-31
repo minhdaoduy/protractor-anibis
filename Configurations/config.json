@@ -2,6 +2,9 @@
     "config" : {
         "reportDir": "report",
         "testDataIndexLine": "report",
+        "mongoDBServer": "",
+        "mongoDBUser": "",
+        "mongoDBPass": "",
         "dbServer": "",
         "dbUser": "",
         "dbPass": ""
