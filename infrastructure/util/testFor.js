@@ -15,6 +15,7 @@ function writeScreenShot(d) {
     // var stream = fs.createWriteStream(filename);
     // stream.write(new Buffer(data, 'base64'));
     // stream.end();
+    
 let finalresult1 = true & true;
 let finalresult2 = true & false;
 let finalresult3 = false & false;
