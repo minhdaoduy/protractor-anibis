@@ -1,37 +1,21 @@
 exports.config = {
-    directConnect: true,
+    // directConnect: true,
 
     // Capabilities to be passed to the webdriver instance.
-   // capabilities: {
-   //   'browserName': 'chrome'
-   //   //'browserName': 'firefox'
-   // },
+   capabilities: {
+     'browserName': 'chrome'
+   },
 
     framework: 'jasmine2',
-   // seleniumAddress: 'http://localhost:4444/wd/hub',
+   seleniumAddress: 'http://localhost:4444/wd/hub',
 
 
     specs: ['LocatoryByModel.js'],
 
     suites: {
-        smoke: ['PageOjects/TestMachers.js'],
-        regression: ['JasmineBasics.js'],
-        functional: ['Banking.js'],
-        all: ['CalculatorTest3.js'],
-        selected: ['spec.js','FirstTest.js'],
+        test: ['src/test_spec/VerifyLoginFunction.js'],
     },
 
-      multiCapabilities: [
-//      {
-//        browserName: 'firefox'
-//      },
-//       {
-//         browserName: 'chrome'
-//       },
-        {
-        // browserName: 'internet explorer'
-            browserName: 'chrome'
-      }],
     // jasmineNodeOpts: {
     //   defaultTimeoutInterval: 30000
     // },

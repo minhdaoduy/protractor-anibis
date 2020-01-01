@@ -85,7 +85,7 @@
     "w": "webdriver-manager start",
     "r": "protractor conf.js",
     "startnode": "node ./bin/www",
-    "testcafe": "node node_modules/testcafe/bin/testcafe.js chrome test_spec/testcafe/",
+    "testcafe": "node node_modules/testcafe/bin/testcafe.js chrome src/test_spec/testcafe/",
     "format": "gulp format",
     "install_testapp": "cd testapp && npm install",
     "prepublish": "gulp prepublish",

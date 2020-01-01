@@ -1,22 +1,302 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/rough/BankManagerLogin.js" line="22" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="d01dc95c-5153-4a37-98e5-4408cac33b7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/node_modules/node_modules.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Practice-protractor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Practice-protractor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configurations/allure-results/8b9261d5-c65a-476f-8c01-ba0ef5580831-testsuite.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Configurations/conf2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/conf2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JasmineBasics.js" beforeDir="false" afterPath="$PROJECT_DIR$/JasmineBasics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configurations/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configurations/run.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datadriven/excel/ExcelTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datadriven/excel/test.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datadriven/json/OR.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datadriven/json/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/Datadriven/json/login.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datadriven/test.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageOjects/AddCustomerDetail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageOjects/BasePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageOjects/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PageOjects/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageOjects/TestMachers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageOjects/customlocators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageOjects/locators/TestSelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageOjects/locators/select-wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageOjects/locatorspec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0000285c-356e-4f00-9d32-c0730fa75047-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0077e44b-6ab2-4824-9187-eda31a950dd4-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0083272b-8ec7-43df-86ab-8d40a1f59eb9-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/02315660-e53b-43da-8bf9-9318ac08bd53-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/02906203-6b11-44ff-a82d-a304b49749d2-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/035fef2f-24bf-4b21-85cb-6f57b899f2e0-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/048abca6-a618-401f-aa52-378f041f5814-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0603c035-426c-45a6-8c61-1847e33bb847-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0614e5d2-6db1-4e55-86fc-fba36cdc6fc0-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/07b6f221-d984-47f1-a335-5060186a6450-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/098ae76d-d547-4a3f-b7b3-41abd0a07330-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0a217ec1-6fd0-47bf-b4f6-2e6a05b1ddf9-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0b0f62b1-c2c3-4322-8e20-0f5a855cd6ad-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0cd9b9f6-6581-43b3-9b69-83a1b21b8b03-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/0de4c3a2-df58-444e-9a6f-18f49351d7c4-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/12703ace-24ac-43aa-904d-456ec4129b2b-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1423e231-3eb2-4143-99ef-b495a106eb31-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/156a4e92-f64d-4e6b-9a72-71351008121e-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1634eee4-6079-4a69-a990-175d460d342d-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/17d03a60-2496-4794-ba42-eb6b7711e438-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1acd64f9-ce9d-4fc8-b4d9-9861d44a893f-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1aeb9e1c-4d37-4532-ae17-9b829938e24e-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1d279fe7-bbc5-4287-8b6a-ca43bfab7456-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1d5ad34f-7b31-4d71-b4db-3f6535e3ecbb-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1dc09eef-a13c-4f9f-8681-224bf5255ff1-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1e1311cd-8375-47b0-b2da-0a0e0dede9d5-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1f651736-fe60-4481-9b58-8b398aa50fbb-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1f9db508-0446-489e-aa28-cabd6664338b-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/20b83795-b134-40ec-80ec-32826f256246-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/21fb3603-0ca6-4e6c-b105-a0d6cc4bae67-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2388a641-61c4-4523-bfdf-ba92d0196621-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/245dc0b5-34f7-4bd6-ad01-cf20850572ba-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2623d455-fa23-4e44-83d1-b71994c86746-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/26a913ff-266a-4dd9-b052-1fcb05aeabab-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/275004dc-5533-43c8-9034-4d78b644f96d-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/279d29be-c213-468d-a82a-149d59a51ac9-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/28e0da30-5077-4a85-91b3-6c084156a136-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/294ee367-967e-47b6-a8ae-fc42181ee810-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/29536d3f-ce29-4513-a8fb-b81e1e04e7b6-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2aa9a9ee-63a2-449f-81c0-b8ef2da7ff93-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2b1c0c3a-6a20-4590-9e1f-fc05b244ebcb-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2b3480b2-cbad-414a-9737-5011db2439d7-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2cabbff3-2f68-42e5-9aba-dfe7e11fd714-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2ec6b23d-50df-4321-b950-5436b44c2f81-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/2efdedc3-6b52-4309-8395-4a4434af19d5-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/30421c8c-f7b5-4d7d-a315-99f6d82a549b-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/30c8066b-761a-4309-8e9f-861396d1d2ce-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/30d7c335-afac-44eb-ae37-4862afbbb1c5-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/333a864d-f79f-4dca-96c1-549a81ab8b90-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/33cd86cb-f1d8-48c7-8a5c-ce235c549237-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3602a788-a1bb-4987-a213-b87fa0a898ad-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/36053412-dce3-46a3-a6c2-ca3c169d32bc-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/365fcf40-69c6-4102-8664-a5c669877f73-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/37eeff24-b983-4485-9977-d20ad5a486d2-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3a41dd4a-f05a-43be-b14a-6aa265a5181b-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3c365adf-81df-4d18-8ad5-8f90f99bf3ed-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3ecb7b58-b97c-4683-ba35-bb83335d5879-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3f3ffb08-c7a3-4307-bc13-8a4875aca931-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4027c699-6efc-4330-ae3e-56b2f8cd285a-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/42bad6e6-1d33-40a9-9781-2cd2f2800eac-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/43d230df-38bd-43f5-851d-95adcfce8722-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/459cc441-4e36-44db-a688-5bb988342942-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4661a67f-23de-4460-8ba8-076ec2eb98aa-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/476e7858-31b2-480f-9d55-92dea4491b09-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/479f7881-a621-4187-869c-0d9779790fdb-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/48c767e6-9959-4530-a7cc-037166e9603b-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4b745c8a-4b33-46ba-b651-e9416a86c30c-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4b7d83e0-eb34-4d10-9246-7d0e60f8bdbe-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4bb729ba-700c-43a3-8bde-c79551cc529a-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4eee8f1e-b74f-48ca-b79f-6ec74a947300-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/519965ee-cb8d-4687-9a30-93fb8d25a011-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5248e0e1-2570-4aeb-bb77-93f23ed8d1a9-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5411eab9-da53-4745-82cc-3acdaa5a9129-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5576778f-28c7-4ed1-848f-d37a7cdcb6d2-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5604ad29-0f5b-4f07-9e4e-1523fabd12e1-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5914f4d4-dca7-4d86-8402-c2a4cdae285d-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/59fc7e65-73a9-4cca-b538-f2ef0f22e30b-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5a59be84-1ff3-4447-97d2-8c7eafab1553-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5b207fbc-6aab-4c1d-93e9-f66e220dc431-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5cf46eeb-3d8b-4bca-b320-619f89489a66-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5dc277ac-ed6a-4d5a-b3bb-8bcb46e5c681-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5ed6c488-65a9-46ea-815a-c8f9e9916dbd-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5fe19673-bb83-478a-83e7-66698579a101-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5fe679da-77aa-4691-93ac-2025e89c316a-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6089c75e-f88a-4464-8384-c0eb6bbf7989-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/614a8cc2-b185-4f76-8ffc-1941bc32f55e-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/61a31554-a7f6-4aa6-b8b7-65acd724173c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/61ba0094-67ce-4279-a9e0-ea0a7f35c81c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/64c5b4bb-bcc5-45cb-8567-0ff31f28f218-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/653d6bcf-3442-482d-bdad-ba1035de5a71-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/65f49e31-3fe7-4193-914c-86400ffe1962-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/66227d02-0d9a-4c5b-ae31-ecba88cce9fa-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/671bbd29-aa41-4457-97bf-3d9dff6e538f-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/68393275-4f4c-4266-9533-e956fc8770d0-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/69f0170c-d2dc-4e84-968b-ff17a200df60-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6b8424c2-d56e-4ec6-93ee-8fa453b73197-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6bb3dd3a-34c3-411c-92d0-2c0674810087-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6fc8370c-f274-4567-ac35-bd0b51830b51-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7019d2b7-be81-4b9e-b157-48926e1fc509-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/70f819b0-e74a-4e9a-85ee-b5264a592046-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/721a7577-1410-46ae-be72-30a802cbeaee-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/73c58cea-214c-4a7e-af0e-9220b1a9ce45-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/74cca3a5-3814-4a7f-942a-fd109d114a13-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/769ff922-6700-4b24-a6d8-48a5e302874c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7809666f-3032-48e7-bb7b-f01755ccfb5d-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/78a19d4b-2e5e-4002-a322-a965fc1fbdc5-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/79ec8ac8-d1cf-45e7-af7e-9986309dabc7-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7b281d3e-b076-4fb6-b547-8e046f04577e-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7c03510e-5577-49ec-bc76-63b2991299d8-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7c0d429b-4a74-4d70-ba55-caacfc6e382f-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7d339305-9448-4444-8a50-7f8d893e3a43-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7ece3b95-8370-4acc-9729-c788df7dce38-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7f5ea46e-b1f8-4c28-97d6-293bf35c1ee5-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/80fb6dfe-96af-44e8-a79c-bb75229e1691-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/818b631b-7bdc-4748-aeef-aac70cc30bab-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/821b4a64-895a-4460-ad62-631b842c113b-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/82b11293-c882-4c37-bf39-c31bcf28d6fe-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/87133079-6a31-4783-9243-47359a8990c7-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/878a2fa0-ae86-4065-a576-39a39a0163b1-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8889b953-6379-4150-bec9-c55f5a651fcb-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8a105e0d-20e2-4bd2-8896-9a646f8bbbac-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8b00a755-0249-4e48-9dd4-0a41fe8ff63c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8bb1d243-2fe5-473b-afaa-bebb01711d3e-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8c1acfa6-2107-48ea-971a-320ba72ef8cb-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8caeb6ff-c111-40db-a7c8-8968fd8685b6-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8e78951d-af42-48a9-8a9a-2d85e2393cf5-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8e91857c-806f-4319-87cc-eae546cbae1c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/8fa7784a-0be6-404a-b80f-0b3d1c0d7b57-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9097b8f4-fe25-46cb-82cb-04afa371f10c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/932a552e-a79c-4cf5-81cd-02656b778f38-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/93376c0c-3254-490b-85f5-11e2922fbf32-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/93f54940-5f44-4d72-8494-491fd3999306-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/942e26eb-09b1-42d8-b4e6-79800fdbd779-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/96215826-e208-4be1-bc39-5e5356ff4f82-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9797be8e-b337-4a70-9d5f-ae2d8d2a12bd-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/97c654e2-b187-4a7a-b2bd-acf172a4fe8a-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/980ff785-38d1-4b95-b5c2-9f7e08de3d6b-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9931fae2-2742-4999-99c8-ffea3c26fd60-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/99478a0f-5fa1-4d52-8a9c-2d50e405e87f-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9abd2bf6-c63d-4018-bb3f-784cb890ebfd-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9b030636-b6e3-4a50-83b4-10bc5aecbfba-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9ceddf99-a624-4ceb-9a7c-30fad64d6d9b-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9d4de9b4-3cd6-4e35-8e08-374abdb2ac2e-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/9e775cca-2cb3-4b57-ba63-79965c134868-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a0b7179a-02d6-49f6-9e28-06534e8a16c8-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a12103d5-5ca4-4595-95c3-421f9efc02c2-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a260be52-eac3-48dd-8dcb-1885b575647a-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a312ff18-4995-4b81-809f-e26f34c327d6-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a3bcb899-bb46-4db6-ac27-3df39878f187-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a5b0d013-704e-4dda-8668-fa3f62aac681-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a6bfd967-4a25-4fbb-bc52-5685e39aa051-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a6e59910-0a3d-405a-b2f0-6192e7f8b8b2-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/a9ab50de-7ef6-412a-87e4-49974e24f0a4-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/aa09b90e-aff9-4756-a59b-0e8b2196f673-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/aa7702b4-5c7f-4b77-8f76-f9f95b672989-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/aaedd8f0-cbdb-4fe4-8ea2-e6f26723b61f-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/aca3629f-4640-4ee7-bc96-374e276c7347-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/addd753e-baee-481e-bcec-ae765e3ae082-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ae796075-a3e7-4d28-93fe-e8aa7c2ef525-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/aed56212-8199-453e-9d1b-7ee505053c7f-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b24a1b5b-f159-4386-a5e8-f202cd0b61d0-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b28f893c-9548-40a1-a78e-a5354af6a9d6-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b3e3f328-d420-40f8-8816-860b029d6ef3-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b42056e7-4575-4b9a-95af-d68b60722cb2-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b488ebb6-a800-4b54-865f-b40ebe48d3ac-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b4d9e7a5-4b6a-48ec-a215-9936c9ccbfac-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b6aef9d7-0756-4a30-8558-2da70f7ca336-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b7765e73-a415-48ce-bd5b-17218db99a2e-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b81c8508-1fa8-41e0-905d-4fae3ec10cd4-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b84dce1f-e4e0-42f3-b8a7-609d1fe104df-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/b8d6c371-912d-4113-a1c0-a33c6a174f57-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/bac656aa-d65f-44c3-a689-99f6b6f164a3-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/bc2a6214-2f3a-4c9f-af36-9658e86e73d8-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/bc3237eb-a175-45ac-a5c2-310838f51025-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/bdb1a259-3dea-4bd5-a3f1-53ca3893492f-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c55a42cf-ba40-47f9-a43d-bdee479297e2-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c787b27b-a52b-4311-8c02-21bb438f03d4-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c81c8596-3fb5-4c18-8a90-02e7cb341122-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c86bc825-0923-4ab8-80bb-87316ac7530e-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c89e63ad-ec5c-4e22-88be-2f5fa984c8d9-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/c8f4b827-cff7-44e8-8b0b-99ac454582e5-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/caa79d33-9a98-4fa6-8161-0f67c3070f33-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/cbb0a20b-41c6-414b-80b0-b86dc998b323-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/cceabab0-d5d1-423e-9132-d4fdad00e14d-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/cda16c21-8685-4d17-b91b-663fb8e5db01-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ce7a083f-667d-4553-8317-72a2a0cd736a-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/cf21b455-ee6d-45d2-a963-a48f65951c80-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/cf7cb461-50cf-4432-b313-250a5da88cc7-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d1166b15-8eea-4efe-a35a-9f3e4d1a778b-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d2313080-c7e8-4b3e-8c05-47c4c75dc4a8-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d261c565-1797-43f3-a071-2e8f0322dd1a-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d4d911fb-439c-4acd-ba5c-6d5dced65239-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d51191d5-9302-4f08-bfd7-f69b425ea02b-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d5c3b373-6088-48ce-bbd1-d0a0c2a4c307-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/d77a52d1-71ea-47dc-9bb5-766f4e0ad73c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/da24cd12-66e0-47c7-abe7-802c26965efe-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/da24e795-ae4a-43d6-ad74-e57c8c3cf65e-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/dbba6cda-5772-44d6-a4f6-91904555de41-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/dca35571-833c-4267-972e-14d6a60d63d3-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/dd82c5cc-b01a-4217-a848-c95f61050527-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/df618ac6-aa1f-4ac0-84b1-c8867e48c3ce-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e11f2330-f004-47cc-be32-000ae746e0c3-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e194e276-3bfd-4b37-849b-74f7e94cd48a-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e1e5ea7d-f730-4209-88ff-b70b99e68445-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e488a328-71e2-4426-bfe4-a29bd0f27859-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e5bb2cb8-0c55-47c2-a7cf-b5bd2e04773e-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e8c00e4c-4574-4767-a0b8-2d6a310b7966-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e962454f-8b3f-4d0e-a131-24e1e59065d6-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ec9f4b02-a5a2-4d5b-8086-b3365cd3eec6-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ed63df05-f4b5-4a06-8e2d-f666fc89ff86-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ee3a9255-a86f-431c-99f3-fa624e707e71-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ef261b31-01b6-41e0-bdf2-8336b35ce481-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/efa837f2-fc7d-4427-8591-21b7b8e1c42b-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f0300aa4-4d40-4f9b-89cb-1181a58bb35a-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f0719f3d-164b-497c-92ca-a174f6778abe-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f128f872-1018-4e92-a432-f1218cc9a664-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f28f07fe-b91e-414b-86e3-03cf0cc2e342-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f4f57383-f602-4c89-b31d-d5556f996ad8-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f691f446-d9c4-48c8-9c55-b3ec448d8f84-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f6a879c0-bb87-44a4-80a5-ba21693df560-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f8007900-94c0-487d-af12-bcbe16da11a0-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f821cec0-dd78-4e68-81af-8597cabf0c1b-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f8274a38-5a8f-4d0b-8552-6a7b8dbf7f9d-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f8662264-4b4f-4339-baad-8848e49641c4-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f96a778c-e754-4249-9cae-eee606203c5c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fc28a9d4-a684-4c01-9d96-e2b07ca161a9-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/febbbe33-3d4f-4fef-82e8-d48ba17e892b-attachment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ff42a5d5-f2ee-4018-8c26-244b1d9bdfd3-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/201809131535.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/helpers/action.helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/helpers/action.helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/helpers/json.helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/helpers/json.helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/helpers/mongoDb.helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/APIs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/Actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/Checkboxes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/ConnectDB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/ConnectDB_postgress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/DateTime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/ExcelTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/ListElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/RestOperations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/SwitchBrowser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/UsingRestApi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/Verifications.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/WaitFor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/customlocators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/forEach.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/log.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/screenshots.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/select-wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/testFor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/util/tryCatch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/AddCustomerInfoTest_spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/BankManagerLogin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/BankManagerLoginTest_spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/Banking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/CalculatorTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/CalculatorTest3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/CustomerLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_spec/VerifyLoginFunction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/FirstTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/GmailTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/JasmineBasics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/LocatoryByModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/TestMachers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_spec/testcafe/index.js" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,64 +309,6 @@
     <favorites_list name="common">
       <favorite_root url="file://$PROJECT_DIR$/conf.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
     </favorites_list>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Objects.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GmailTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="8" selection-start-line="3" selection-end-line="3" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JasmineBasics.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Configurations/conf2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LocatoryByModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,61 +336,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/spec.js" />
-        <option value="$PROJECT_DIR$/src/com/company/conf.js" />
-        <option value="$PROJECT_DIR$/spec.js" />
-        <option value="$PROJECT_DIR$/FirstTest.js" />
-        <option value="$PROJECT_DIR$/Banking.js" />
-        <option value="$PROJECT_DIR$/CalculatorTest.js" />
-        <option value="$PROJECT_DIR$/CalculatorTest2.js" />
-        <option value="$PROJECT_DIR$/CalculatorTest3.js" />
-        <option value="$PROJECT_DIR$/TestMachers.js" />
-        <option value="$PROJECT_DIR$/PageOjects/customlocators.js" />
-        <option value="$PROJECT_DIR$/PageOjects/locators/TestSelect.js" />
-        <option value="$PROJECT_DIR$/winston/log.js" />
-        <option value="$PROJECT_DIR$/winston/test.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/testlog.js" />
-        <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/log.js" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Objects.json.js" />
-        <option value="$PROJECT_DIR$/Objects.json" />
-        <option value="$PROJECT_DIR$/GmailTest.js" />
-        <option value="$PROJECT_DIR$/Excel/ExcelTest.js" />
-        <option value="$PROJECT_DIR$/rough/CustomerLogin.js" />
-        <option value="$PROJECT_DIR$/util/customerlocators.js" />
-        <option value="$PROJECT_DIR$/PageOjects/locatorspec.js" />
-        <option value="$PROJECT_DIR$/util/customlocators.js" />
-        <option value="$PROJECT_DIR$/LocatoryByModel.js" />
-        <option value="$PROJECT_DIR$/conf.js" />
-        <option value="$PROJECT_DIR$/javascripts/test.html" />
-        <option value="$PROJECT_DIR$/javascripts/script2.js" />
-        <option value="$PROJECT_DIR$/javascripts/script3.js" />
-        <option value="$PROJECT_DIR$/javascripts/script.js" />
-        <option value="$PROJECT_DIR$/javascripts/index.html" />
-        <option value="$PROJECT_DIR$/rough/BankManagerLogin.js" />
-        <option value="$PROJECT_DIR$/JasmineBasics.js" />
-        <option value="$PROJECT_DIR$/Configurations/conf2.js" />
-        <option value="$PROJECT_DIR$/Configurations/run.bat" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -177,64 +349,20 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1928" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectId" id="1VnB5AGnFCkUAobX2BHge262ZEx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Practice-protractor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice-protractor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice-protractor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice-protractor" type="462c0819:PsiDirectoryNode" />
-              <item name="Configurations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice-protractor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice-protractor" type="462c0819:PsiDirectoryNode" />
-              <item name="Configurations" type="462c0819:PsiDirectoryNode" />
-              <item name="allure-results" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice-protractor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice-protractor" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -242,8 +370,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536897961001" />
-    <property name="javascript.nodejs.core.library.configured.version" value="8.11.4" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules" />
+    <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.12.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/BusinessFlows" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -259,35 +388,24 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Practice-protractor\javascripts" />
-      <recent name="D:\JAVA\ProtractorPageObjects" />
-      <recent name="D:\Practice-protractor" />
-      <recent name="D:\Practice-protractor\util" />
-      <recent name="C:\Users\ddminh\IdeaProjects\Practice-protractor\Configurations" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PROJECTS\protractor-anibis\src" />
       <recent name="C:\Users\ddminh\IdeaProjects\Practice-protractor" />
       <recent name="C:\Users\ddminh\IdeaProjects\Practice-protractor\PageOjects\locators" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PROJECTS\protractor-anibis\src\BusinessFlows" />
+      <recent name="D:\PROJECTS\protractor-anibis\src\PageOjects" />
+      <recent name="D:\Practice-protractor\javascripts" />
+      <recent name="D:\JAVA\ProtractorPageObjects" />
+      <recent name="D:\Practice-protractor" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Unnamed">
+  <component name="RunManager" selected="Mocha.Automation Customer Login functionality.Login to the account">
     <configuration name="Unnamed" type="AntRunConfigurationType" factoryName="Ant build" temporary="true" debug-port="25000" jdk-name="1.8" max-memory="256" logging-level="0">
       <file>$PROJECT_DIR$/rough/BankManagerLogin.js</file>
       <method v="2">
@@ -309,10 +427,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="conf2" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+    <configuration name="conf2" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/Configurations/conf2.js" />
       <node-interpreter value="project" />
+      <protractor-package value="$USER_HOME$/AppData/Roaming/npm/node_modules/protractor" />
+      <protractor-options value="" />
       <envs />
+      <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
     <configuration name="conf1" type="KotlinJavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -324,12 +445,48 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Practice-protractor" type="NodeJSConfigurationType" factoryName="Node.js" application-parameters="D:\Practice-protractor\conf.js" path-to-js-file="$USER_HOME$/AppData/Roaming/npm/node_modules/protractor/built/cli.js" working-dir="$PROJECT_DIR$">
+    <configuration name="Practice-protractor" type="NodeJSConfigurationType" application-parameters="D:\Practice-protractor\conf.js" path-to-js-file="$USER_HOME$/AppData/Roaming/npm/node_modules/protractor/built/cli.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="Automation Customer Login functionality.Login to the account" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/src/test_spec/VerifyLoginFunction.js</test-file>
+      <test-names>
+        <name value="Automation Customer Login functionality" />
+        <name value="Login to the account" />
+      </test-names>
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Node.js.Practice-protractor" />
+      <item itemvalue="Protractor.conf2" />
+      <item itemvalue="Mocha.Automation Customer Login functionality.Login to the account" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Mocha.Automation Customer Login functionality.Login to the account" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -369,43 +526,9 @@
       <workItem from="1536898409845" duration="594000" />
       <workItem from="1536916323744" duration="587000" />
       <workItem from="1537269906834" duration="627000" />
+      <workItem from="1577879009080" duration="8428000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="conf1 - 2018.09.12 at 10h 17m 49s.xml">
-      <configuration name="conf1" configurationId="KotlinJavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="conf1 - 2018.09.12 at 13h 35m 31s.xml">
-      <configuration name="conf1" configurationId="KotlinJavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="conf1 - 2018.09.12 at 13h 36m 17s.xml">
-      <configuration name="conf1" configurationId="KotlinJavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="conf1 - 2018.09.12 at 13h 37m 21s.xml">
-      <configuration name="conf1" configurationId="KotlinJavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="conf1 - 2018.09.12 at 13h 47m 52s.xml">
-      <configuration name="conf1" configurationId="KotlinJavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="conf1 - 2018.09.12 at 14h 04m 06s.xml">
-      <configuration name="conf1" configurationId="KotlinJavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="conf1 - 2018.09.12 at 14h 05m 02s.xml">
-      <configuration name="conf1" configurationId="KotlinJavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="conf1 - 2018.09.12 at 14h 06m 08s.xml">
-      <configuration name="conf1" configurationId="KotlinJavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="conf1 - 2018.09.12 at 14h 07m 14s.xml">
-      <configuration name="conf1" configurationId="KotlinJavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="conf1 - 2018.09.12 at 14h 08m 17s.xml">
-      <configuration name="conf1" configurationId="KotlinJavaScriptTestRunnerProtractor" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128736000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,349 +539,76 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7351525" visible="true" weight="0.13006397" />
-      <window_info id="Structure" order="1" sideWeight="0.26484752" side_tool="true" weight="0.15138593" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Learn" order="6" />
-      <window_info id="Favorites" order="7" sideWeight="0.26484752" side_tool="true" weight="0.15138593" />
-      <window_info id="DBHelper" order="8" />
-      <window_info anchor="bottom" id="GraphQL" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.324295" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978093" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3274918" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49776286" visible="true" weight="0.27843988" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50223714" side_tool="true" weight="0.3284553" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="DBOutput" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24944071" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32997763" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Maven" order="9" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16518424" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Learn" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="DBHelper" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3274918" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978093" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3274918" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49776286" weight="0.27929902" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50223714" side_tool="true" weight="0.3284553" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="DBOutput" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24944071" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32997763" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/dotNotationRule.js" />
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/conditionalExpressionParensRule.js" />
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/noParamReassignRule.js" />
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/noDuplicateImportsRule.js" />
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/noJasmineFocusRule.js" />
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/multilineArrowRule.js" />
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/preferCaseBlocksRule.js" />
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/preferLiteralRule.js" />
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/extVariableNameRule.js" />
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/literalSpacingRule.js" />
+        <option value="$PROJECT_DIR$/node_modules/vrsource-tslint-rules/rules/maxParamsRule.js" />
+      </list>
+    </option>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="2334" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577879158110">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2334" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577879158110" />
+    <state x="2610" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577888300693">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2610" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577888300693" />
+    <state width="1877" height="276" key="GridCell.Tab.0.bottom" timestamp="1577889098024">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577889098024" />
+    <state width="1877" height="276" key="GridCell.Tab.0.center" timestamp="1577889098024">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="276" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577889098024" />
+    <state width="1877" height="276" key="GridCell.Tab.0.left" timestamp="1577889098024">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="276" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577889098024" />
+    <state width="1877" height="276" key="GridCell.Tab.0.right" timestamp="1577889098024">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="276" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577889098024" />
+    <state x="2381" y="163" key="SettingsEditor" timestamp="1577879088804">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2381" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577879088804" />
+    <state x="2543" y="225" key="search.everywhere.popup" timestamp="1577883345111">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577883345111" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/test_spec/VerifyLoginFunction.js</url>
+          <line>5</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/spec.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts" />
-    <entry file="file://$PROJECT_DIR$/PageOjects/locators/select-wrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/winston-basic.log" />
-    <entry file="file://$PROJECT_DIR$/allure-results/2c75b50e-32ae-44e6-ac08-4ff1f4e48f18-attachment.png" />
-    <entry file="file://$PROJECT_DIR$/allure-results/6ba4c54a-bc66-460e-8ea2-e53c867e8a73-testsuite.xml" />
-    <entry file="file://$PROJECT_DIR$/Banking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/winston-basic.log" />
-    <entry file="file://$PROJECT_DIR$/allure-results/36053412-dce3-46a3-a6c2-ca3c169d32bc-testsuite.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Objects.json.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JAVA/Protractor Course/08 Data Driven Testing/047 ExcelTest/ExcelTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="31" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/xlsx/types/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="535" column="4" selection-start-line="535" selection-start-column="4" selection-end-line="535" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/customerlocators.js" />
-    <entry file="file://$PROJECT_DIR$/PageOjects/locatorspec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" selection-start-line="27" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/select-wrapper.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="3066" column="26" selection-start-line="3066" selection-start-column="26" selection-end-line="3066" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/customlocators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JAVA/ProtractorPageObjects/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestMachers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testlog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="77" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/combined.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Excel/ExcelTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PageOjects/TestMachers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CalculatorTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CalculatorTest3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rough/CustomerLogin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PageOjects/customlocators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FirstTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PageOjects/locators/TestSelect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/script4.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/script3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/script2.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rough/BankManagerLogin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Objects.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GmailTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="8" selection-start-line="3" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LocatoryByModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JasmineBasics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Configurations/run.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Configurations/allure-results/8b9261d5-c65a-476f-8c01-ba0ef5580831-testsuite.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Configurations/conf2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

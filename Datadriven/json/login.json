@@ -1,5 +1,7 @@
-{
-  "value1": "1",
-  "value2": "2",
-  "value3": "3"
-}
+[
+  {
+    "username": "buyer.nvg01@gmail.com",
+    "password": "nvg07072012",
+    "description": "test buyer"
+  }
+]

@@ -55,9 +55,9 @@ ActionHelper.prototype.expectedConditions = async function (webElement, expected
 }
 
 //wait element for element clickable, then click
-ActionHelper.prototype.clickElementClickable = async function (webElement) {
+ActionHelper.prototype.clickElementClickable = async function (webElement, timeout) {
     let error = '';
-    for (let i = 0; i < browser.actionRetryTime; i++) {
+    for (let i = 0; i < timeout; i+=500) {
         try {
             await this.waitForElementToBeClickable(webElement);
             await webElement.click();
@@ -65,7 +65,7 @@ ActionHelper.prototype.clickElementClickable = async function (webElement) {
             break;
         } catch (e) {
             error = e;
-            browser.sleep(500);
+            browser.sleep(i);
         }
         if (error !== '')
             throw error;
@@ -74,9 +74,9 @@ ActionHelper.prototype.clickElementClickable = async function (webElement) {
 }
 
 //wait element for element presence, then click
-ActionHelper.prototype.clickElementPresence = async function (webElement) {
+ActionHelper.prototype.clickElementPresence = async function (webElement, timeout) {
     let error = '';
-    for (let i = 0; i < browser.actionRetryTime; i++) {
+    for (let i = 0; i < timeout; i+=500) {
         try {
             await this.waitForPresenceOf(webElement);
             await webElement.click();
@@ -84,7 +84,7 @@ ActionHelper.prototype.clickElementPresence = async function (webElement) {
             break;
         } catch (e) {
             error = e;
-            browser.sleep(500);
+            browser.sleep(i);
         }
         if (error !== '')
             throw error;
@@ -93,9 +93,9 @@ ActionHelper.prototype.clickElementPresence = async function (webElement) {
 }
 
 //wait element for element visible, then input
-ActionHelper.prototype.sendKeyElement = async function (webElement, text) {
+ActionHelper.prototype.sendKeyElement = async function (webElement, text, timeout) {
     let error = '';
-    for (let i = 0; i < browser.actionRetryTime; i++) {
+    for (let i = 0; i < timeout; i+=500) {
         try {
             await this.waitForVisibilityOf(webElement);
             await webElement.clear();
@@ -104,7 +104,7 @@ ActionHelper.prototype.sendKeyElement = async function (webElement, text) {
             break;
         } catch (e) {
             error = e;
-            browser.sleep(500);
+            browser.sleep(i);
         }
         if (error !== '')
             throw error;

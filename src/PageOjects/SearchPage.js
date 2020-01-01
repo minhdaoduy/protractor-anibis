@@ -1,0 +1,8 @@
+class HomePage{
+
+    loginAsCustomer() {
+
+
+    };
+
+};

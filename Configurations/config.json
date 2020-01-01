@@ -1,12 +1,7 @@
 {
     "config" : {
-        "reportDir": "report",
-        "testDataIndexLine": "report",
-        "mongoDBServer": "",
-        "mongoDBUser": "",
-        "mongoDBPass": "",
-        "dbServer": "",
-        "dbUser": "",
-        "dbPass": ""
+        "baseURL": "https://stage.anibis.ch/fr/default.aspx",
+        "username": "buyer.nvg01@gmail.com",
+        "password": "nvg07072012"
     }
 }

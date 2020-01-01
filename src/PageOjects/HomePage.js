@@ -1,18 +1,14 @@
-require('../util/select-wrapper.js');
-require('../util/customlocators.js');
+let actionHelper = require('../../infrastructure/helpers/action.helper')
+//locators
+let eleLoginButton = element(by.id('ctl00_phlContent_ctlEmailValidationBox_txtEmail'));
 
-var HomePage = function () {
-
-    this.loginAsCustomer = function () {
-
-        element(by.partialButtonText("Customer")).click();
-
-    };
-
-    this.loginAsBankManager = function () {
-
-        element(by.ngClick("manager()")).click();
-        return require('../pages/AddCustomerDetail.js');
+let HomePage = function() {
+    this.clickLoginButton = async function() {
+        try {
+            actionHelper.clickElementClickable(eleLoginButton, 5000);
+        } catch (e) {
+            throw Error('Cannot click login button. Error: ' + e);
+        }
     };
 };
 module.exports = new HomePage();
