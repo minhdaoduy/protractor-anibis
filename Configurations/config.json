@@ -1,7 +1,11 @@
 {
     "config" : {
-        "baseURL": "https://stage.anibis.ch/fr/default.aspx",
-        "username": "buyer.nvg01@gmail.com",
-        "password": "nvg07072012"
+        "baseURL": "https://stage.anibis.ch",
+        "defaultLanguage": "fr",
+        "languages": ["de","fr","it"],
+        "homeURI": "default.aspx",
+        "profileURI": "profile.aspx",
+        "searchURI": "advertlist.aspx",
+        "defaultTimeOut": "5000"
     }
 }

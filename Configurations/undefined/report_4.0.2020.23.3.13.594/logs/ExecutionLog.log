@@ -1,0 +1,5 @@
+[2020-01-04T23:03:19.259] [INFO] Logger - Access to home page
+[2020-01-04T23:03:35.276] [INFO] Logger - Click login page
+[2020-01-04T23:03:38.449] [INFO] Logger - ======================= Start step 5 =======================
+[2020-01-04T23:03:54.254] [INFO] Logger - Total result in current page is as expectation: 20
+[2020-01-04T23:03:54.259] [INFO] Logger - ======================= Start step 5 =======================

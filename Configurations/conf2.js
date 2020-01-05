@@ -1,3 +1,6 @@
+let logger = require('../infrastructure/util/logger.js');
+let jsonHelper = require('../infrastructure/helpers/json.helper');
+let log4js = require('log4js');
 exports.config = {
     // directConnect: true,
 
@@ -9,28 +12,34 @@ exports.config = {
     framework: 'jasmine2',
    seleniumAddress: 'http://localhost:4444/wd/hub',
 
+    specs: ['../src/test_spec/VerifyLoginFunction.js'],
 
-    specs: ['LocatoryByModel.js'],
+    onPrepare: async function () {
+        logger.configLog4js();
+        //start browser with maximize size
+        browser.driver.manage().window().maximize();
 
-    suites: {
-        test: ['src/test_spec/VerifyLoginFunction.js'],
+        //config for timeout interval
+        if (browser.timeoutInterval === undefined)
+            browser.timeoutInterval = 5000;
+
+        //config for default try time
+        if (browser.expectConditionRetryTime === undefined)
+            browser.expectConditionRetryTime = 20;
+
+        //Init and Add logger into browser
+        browser.logger = log4js.getLogger('Logger');
+
+        //default language
+        if (browser.params.language === undefined)
+            browser.params.language = jsonHelper.readConfig('defaultLanguage');
     },
 
-    // jasmineNodeOpts: {
-    //   defaultTimeoutInterval: 30000
-    // },
-
-    onPrepare: function () {
-        var AllureReporter = require('jasmine-allure-reporter');
-        jasmine.getEnv().addReporter(new AllureReporter());
-        jasmine.getEnv().afterEach(function(done){
-            browser.takeScreenshot().then(function (png) {
-                allure.createAttachment('Screenshot', function () {
-                    return new Buffer(png, 'base64')
-                }, 'image/png')();
-                done();
-            })
-        });
+    jasmineNodeOpts: {
+        // If true, print colors to the terminal.
+        showColors: true,
+        // Default time to wait in ms before a test fails.
+        defaultTimeoutInterval: 9999999,
     }
 
 

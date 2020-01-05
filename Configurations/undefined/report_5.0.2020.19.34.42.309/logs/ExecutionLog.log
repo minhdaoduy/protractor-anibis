@@ -1,0 +1,17 @@
+[2020-01-05T19:34:47.709] [INFO] Logger - Access to home page
+[2020-01-05T19:35:56.183] [INFO] Logger - ======================= Start Step 1 =======================
+[2020-01-05T19:35:56.184] [INFO] Logger - Start verify cursor is focused to email field
+[2020-01-05T19:35:56.242] [INFO] Logger - ======================= Start Step 2 =======================
+[2020-01-05T19:35:56.353] [INFO] Logger - Start verify background color for email field
+[2020-01-05T19:35:56.383] [INFO] Logger - BackGround color of Email field is red
+[2020-01-05T19:35:56.422] [INFO] Logger - Message of email is correct
+[2020-01-05T19:35:56.425] [INFO] Logger - ======================= Start step 3 =======================
+[2020-01-05T19:35:56.791] [INFO] Logger - Start verify background color for email field
+[2020-01-05T19:35:56.813] [INFO] Logger - BackGround color of Email field is red
+[2020-01-05T19:35:56.839] [INFO] Logger - Message of email is correct
+[2020-01-05T19:35:56.843] [INFO] Logger - ======================= Start step 4 =======================
+[2020-01-05T19:36:04.892] [INFO] Logger - Login with correct email
+[2020-01-05T19:36:04.894] [INFO] Logger - ======================= Start step 5 =======================
+[2020-01-05T19:36:39.576] [INFO] Logger - Total result in current page is as expectation: 20
+[2020-01-05T19:36:39.579] [INFO] Logger - ======================= Start step 5 =======================
+[2020-01-05T19:36:40.258] [INFO] Logger - Total result in current page is as expectation: 

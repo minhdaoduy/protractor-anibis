@@ -1,0 +1,39 @@
+{
+  "loginInfo": [
+    {
+      "username": "buyer.nvg01@gmail.com",
+      "password": "nvg07072012",
+      "description": "test buyer"
+    }
+  ],
+  "testData": {
+    "errorColor": ["rgba(255, 255, 255, 1)","rgba(255, 236, 236, 1)"],
+    "incorrectEmail": "incorrectEmail",
+    "category": {
+      "fr": "Immobilier",
+      "de": "Immobilien",
+      "it": "Immobili"
+    },
+    "where": {
+      "location": "Zurich",
+      "distance": "10"
+    },
+    "price": {
+      "from": "1000",
+      "to": "5000"
+    },
+    "maximumTotalResultInAPage": 20
+  },
+  "errorMessages": {
+    "inputIncorrectEmail_ErrorMessage": {
+      "fr": "Indiquez votre adresse e-mail",
+      "de": "Geben Sie Ihre E-Mail-Adresse an",
+      "it": "Indichi il Suo indirizzo e-mail"
+    },
+    "notInputEmail_ErrorMessage": {
+      "fr": "N’oubliez pas cette information",
+      "de": "Vergessen Sie diese Angabe nicht",
+      "it": "Non si dimentichi questa informazione"
+    }
+  }
+}

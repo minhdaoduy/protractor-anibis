@@ -1,34 +1,27 @@
-let strTestDataFile;
+const fs = require('fs');
 
 class JsonHelper {
 
     //Read the config file
-    static readConfig(configKey) {
-        //Import the fs module
-        const fs = require('fs');
-
+    static readCJson(path) {
         //Read the json file into row data
-        let rowData = fs.readFileSync('Configurations/config.json');
-
-        //parse the row data in to Json format
-        let result = JSON.parse(rowData);
-
-        return result['config'][configKey];
-    }
-    
-    //Read data from json file and return array object
-    static readJsonArray(filePath) {
-        //Import the fs module
-        const fs = require('fs');
-
-        //Read the json file into row data
-        let rowData = fs.readFileSync(filePath);
-
-        //parse the row data in to Json format
-        let result = JSON.parse(rowData);
+        let rowData = fs.readFileSync(path);
 
         return JSON.parse(rowData);
     }
+
+    //Read the config file
+    static readConfig(configKey) {
+        let result = JsonHelper.readCJson('./config.json')
+        return result['config'][configKey];
+    }
+
+    //Read the config file
+    static readTestData() {
+        let result = JsonHelper.readCJson('../DataDriven/json/testData.json')
+        return result;
+    }
+    
 
     static isEqual (j1, j2) {
         let result = false;

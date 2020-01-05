@@ -1,0 +1,13 @@
+[2020-01-04T19:03:00.676] [INFO] Logger - Access to home page
+[2020-01-04T19:03:19.702] [INFO] Logger - Click login page
+[2020-01-04T19:03:23.464] [INFO] Logger - ======================= Start Step 1 =======================
+[2020-01-04T19:03:23.465] [INFO] Logger - Start verify cursor is focused to email field
+[2020-01-04T19:03:23.539] [INFO] Logger - ======================= Start Step 2 =======================
+[2020-01-04T19:03:23.669] [INFO] Logger - Start verify background color for email field
+[2020-01-04T19:03:23.706] [INFO] Logger - BackGround color of Email field is red
+[2020-01-04T19:03:23.745] [INFO] Logger - Message of email is correct
+[2020-01-04T19:03:23.747] [INFO] Logger - ======================= Start step 3 =======================
+[2020-01-04T19:03:24.415] [INFO] Logger - Start verify background color for email field
+[2020-01-04T19:03:24.448] [INFO] Logger - BackGround color of Email field is red
+[2020-01-04T19:03:24.482] [INFO] Logger - Message of email is correct
+[2020-01-04T19:03:24.484] [INFO] Logger - ======================= Start step 3 =======================
