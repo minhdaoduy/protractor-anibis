@@ -38,21 +38,31 @@ describe("Automation testing anibis website: Login, Search", function () {
         await loginFlows.verifyErrorMessageOfEmail(jsonHelper.readTestData()['errorMessages']['inputIncorrectEmail_ErrorMessage'][browser.params.language]);
     });
 
-    it("Step 4: Login successfully." +
-        "\nExpected: Login with correct email", async function () {
+    it("Step 4: Submit incorrect data for password field then click login button." +
+        "\nExpected: Email Field has red background and show error", async function () {
         await browser.logger.info("======================= Start step 4 =======================");
+        let email = jsonHelper.readTestData()['loginInfo'][0]['username'];
+        let password = jsonHelper.readTestData()['testData'][0]['incorrectPassword'];
+        await loginFlows.inputEmailPasswordAndClickLogin(email, password);
+        await loginFlows.verifyBackGroundColorOfEmail(jsonHelper.readTestData()['testData']['errorColor']);
+        await loginFlows.verifyErrorMessageOfEmail(jsonHelper.readTestData()['errorMessages']['inputIncorrectEmail_ErrorMessage'][browser.params.language]);
+    });
+
+    it("Step 5: Login successfully." +
+        "\nExpected: Login with correct email", async function () {
+        await browser.logger.info("======================= Start step 5 =======================");
         let email = jsonHelper.readTestData()['loginInfo'][0]['username'];
         let password = jsonHelper.readTestData()['loginInfo'][0]['password'];
         await loginFlows.inputEmailPasswordAndClickLogin(email, password);
         await loginFlows.verifyLoginWithCorrectEmail(email);
     });
 
-    it("Step 5: Perform a search with:\n" +
+    it("Step 6: Perform a search with:\n" +
         "a. Immobilien category\n" +
         "b. Location Zurich, 10km\n" +
         "c. Price from 1000 to 5000.\n" +
         "Expected: Make sure that the Result displays exactly 20 items on 1st page", async function () {
-        await browser.logger.info("======================= Start step 5 =======================");
+        await browser.logger.info("======================= Start step 6 =======================");
         await browser.get(urlBuilder.getSearchURL());
 
         await searchFlows.clickCategoryItemByName(jsonHelper.readTestData()['testData']['category'][browser.params.language]);
@@ -68,9 +78,9 @@ describe("Automation testing anibis website: Login, Search", function () {
         await searchFlows.verifyTotalResultInCurrentPage(jsonHelper.readTestData()['testData']['maximumTotalResultInAPage'])
     });
 
-    it("Step 6: Sort result list by date\n" +
+    it("Step 7: Sort result list by date\n" +
         "Expected: Make sure that the first 20 items are correctly sorted.", async function () {
-        await browser.logger.info("======================= Start step 5 =======================");
+        await browser.logger.info("======================= Start step 7 =======================");
         await searchFlows.sortByOption(FILTER_OPTION.DATE)
         await searchFlows.verifySortingOfResultList(FILTER_OPTION.DATE)
     });

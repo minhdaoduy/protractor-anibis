@@ -15,6 +15,10 @@ class LoginPage{
         return eleEmailTextField.getCssValue('background-color');
     }
 
+    getBackGroundColorOfPassword() {
+        return elePasswordTextField.getCssValue('background-color');
+    }
+
     async inputEmailTextField(value) {
         await actionHelper.sendKeyElement(eleEmailTextField, value, browser.expectConditionRetryTime);
     }
@@ -28,6 +32,10 @@ class LoginPage{
     }
 
     getEmailErrorMessage() {
+        return eleEmailErrorMessage.getText();
+    }
+
+    getPasswordErrorMessage() {
         return eleEmailErrorMessage.getText();
     }
 

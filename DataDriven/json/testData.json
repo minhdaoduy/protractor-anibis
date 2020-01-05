@@ -9,6 +9,7 @@
   "testData": {
     "errorColor": ["rgba(255, 255, 255, 1)","rgba(255, 236, 236, 1)"],
     "incorrectEmail": "incorrectEmail",
+    "incorrectPassword": "incorrectPassword",
     "category": {
       "fr": "Immobilier",
       "de": "Immobilien",
@@ -34,6 +35,11 @@
       "fr": "N’oubliez pas cette information",
       "de": "Vergessen Sie diese Angabe nicht",
       "it": "Non si dimentichi questa informazione"
+    },
+    "inputIncorrectPassword_ErrorMessage": {
+      "fr": "Ce mot de passe n’est pas valide. Mot de passe oublié?",
+      "de": "Dieses Passwort ist nicht gültig. Passwort vergessen?",
+      "it": "Questa password non è valida. Password dimenticata?"
     }
   }
 }
