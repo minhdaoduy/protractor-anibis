@@ -4,7 +4,7 @@
 * [verifySortingOfResultList] method still have not handle for sort price due to limit time, therefore I use else to throw error to void automation will pass this method when using with not handled sort type
 * I would also script for a beautiful report if I have more time.
 * If I have more time, I'll overview all web pages as well as data to consider how I should separate testData.json to specialized .json files.
-But one thing I make sure will do - using one file data for multi languages (it maybe csv file or a Data Base - a DB of Automation)
+But one thing I make sure will do - using better way to manage for multi languages.
 
 ## Setup:
 * Install [Node](http://nodejs.org) (v8.x.x or later)

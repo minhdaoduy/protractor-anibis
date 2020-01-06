@@ -1,9 +1,0 @@
-[2020-01-04T09:44:42.821] [INFO] Logger - Access to home page
-[2020-01-04T09:45:03.671] [INFO] Logger - Click login page
-[2020-01-04T09:45:07.009] [INFO] Logger - ======================= Step 1 =======================
-[2020-01-04T09:45:07.072] [INFO] Logger - ======================= Step 2 =======================
-[2020-01-04T09:45:07.217] [INFO] Logger - BackGround color of Email field is red
-[2020-01-04T09:45:07.259] [INFO] Logger - Message of email is correct
-[2020-01-04T09:45:07.261] [INFO] Logger - ======================= Step 3 =======================
-[2020-01-04T09:45:07.666] [INFO] Logger - BackGround color of Email field is red
-[2020-01-04T09:45:07.717] [INFO] Logger - Message of email is correct
