@@ -35,7 +35,30 @@ class LoginFlows extends Many(LoginPage.constructor, ProfilePage.constructor){
                 "\nActual: " + emailErrorMessage);
     };
 
+    async verifyBackGroundColorOfPassword(expectBackGroundColorOfPassword) {
+        await browser.logger.info("Start verify background color for password field");
+        let backGroundColorOfPassword = await this.getBackGroundColorOfPassword();
+        if (expectBackGroundColorOfPassword.includes(backGroundColorOfPassword))
+            await browser.logger.info("BackGround color of Email field is red");
+        else
+            throw Error("BackGround color of Email field is NOT red" +
+                "\nExpected: " + expectBackGroundColorOfPassword +
+                "\nActual: " + backGroundColorOfPassword);
+    };
+
+    async verifyErrorMessageOfPassword(expectedMessage) {
+        await browser.logger.info("Start verify error message of password field");
+        let emailErrorMessage = await this.getPasswordErrorMessage();
+        if (emailErrorMessage === expectedMessage)
+            await browser.logger.info("Message of email is correct");
+        else
+            throw Error("Message of email is NOT correct" +
+                "\nExpected: " + expectedMessage +
+                "\nActual: " + emailErrorMessage);
+    };
+
     async verifyLoginWithCorrectEmail(expectedEmail) {
+        await browser.logger.info("Start verify error message of email field");
         await browser.get(urlBuilder.getProfileURL());
         let actualEmail = await this.getEmail();
         if (actualEmail === expectedEmail)
@@ -45,6 +68,7 @@ class LoginFlows extends Many(LoginPage.constructor, ProfilePage.constructor){
     };
 
     async inputEmailPasswordAndClickLogin(email, password) {
+        await browser.logger.info("Start input email, click continue, input password and click login");
         await this.inputEmailTextField(email);
         await this.clickContinueButton();
         await this.inputPassword(password);

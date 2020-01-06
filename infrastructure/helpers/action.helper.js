@@ -4,17 +4,17 @@ function ActionHelper() {
 }
 
 //Wait for Element visible, rety maximum 5 time and each time maximum wait for 5s
-ActionHelper.prototype.waitForVisibilityOf = async function (webElement, tryTime = browser.expectConditionRetryTime) {
+ActionHelper.prototype.waitForVisibilityOf = async function (webElement, tryTime = browser.params.expectConditionRetryTime) {
     await this.expectedConditions(webElement, 'waitForVisibilityOf');
 }
 
 //Wait for Element to be clickable, rety maximum 5 time and each time maximum wait for 5s
-ActionHelper.prototype.waitForElementToBeClickable = async function (webElement, tryTime = browser.expectConditionRetryTime) {
+ActionHelper.prototype.waitForElementToBeClickable = async function (webElement, tryTime = browser.params.expectConditionRetryTime) {
     await this.expectedConditions(webElement, 'waitForElementToBeClickable');
 }
 
 //Wait for Element presence, rety maximum 5 time and each time maximum wait for 5s
-ActionHelper.prototype.waitForPresenceOf = async function (webElement, tryTime = browser.expectConditionRetryTime) {
+ActionHelper.prototype.waitForPresenceOf = async function (webElement, tryTime = browser.params.expectConditionRetryTime) {
     await this.expectedConditions(webElement, 'waitForPresenceOf');
 }
 
@@ -27,19 +27,19 @@ ActionHelper.prototype.expectedConditions = async function (webElement, expected
                 case 'waitForPresenceOf':
                     await browser.wait(
                         protractor.ExpectedConditions.presenceOf(webElement),
-                        browser.timeoutInterval
+                        browser.params.timeoutInterval
                     );
                     break;
                 case 'waitForElementToBeClickable':
                     await browser.wait(
                         protractor.ExpectedConditions.elementToBeClickable(webElement),
-                        browser.timeoutInterval
+                        browser.params.timeoutInterval
                     );
                     break;
                 case 'waitForVisibilityOf':
                     await browser.wait(
                         protractor.ExpectedConditions.visibilityOf(webElement),
-                        browser.timeoutInterval
+                        browser.params.timeoutInterval
                     );
                     break;
             }
@@ -55,7 +55,7 @@ ActionHelper.prototype.expectedConditions = async function (webElement, expected
 }
 
 //wait element for element clickable, then click
-ActionHelper.prototype.clickElementClickable = async function (webElement, tryTime = browser.expectConditionRetryTime) {
+ActionHelper.prototype.clickElementClickable = async function (webElement, tryTime = browser.params.expectConditionRetryTime) {
     let error = '';
     for (let i = 0; i < tryTime; i+=500) {
         try {
@@ -74,7 +74,7 @@ ActionHelper.prototype.clickElementClickable = async function (webElement, tryTi
 }
 
 //wait element for element presence, then click
-ActionHelper.prototype.clickElementPresence = async function (webElement, tryTime = browser.expectConditionRetryTime) {
+ActionHelper.prototype.clickElementPresence = async function (webElement, tryTime = browser.params.expectConditionRetryTime) {
     let error = '';
     for (let i = 0; i < tryTime; i+=500) {
         try {
@@ -93,7 +93,7 @@ ActionHelper.prototype.clickElementPresence = async function (webElement, tryTim
 }
 
 //wait element for element visible, then input
-ActionHelper.prototype.sendKeyElement = async function (webElement, text, tryTime = browser.expectConditionRetryTime) {
+ActionHelper.prototype.sendKeyElement = async function (webElement, text, tryTime = browser.params.expectConditionRetryTime) {
     let error = '';
     for (let i = 0; i < tryTime; i+=500) {
         try {
@@ -126,12 +126,12 @@ ActionHelper.prototype.verifyElementDisplayOrNot = async function (webElement, i
         if (isDisplay)
             await browser.waits(
                 protractor.ExpectedConditions.presenceOf(webElement),
-                browser.timeoutInterval
+                browser.params.timeoutInterval
             );
         else 
             await browser.waits(
                 protractor.ExpectedConditions.invisibilityOf(webElement),
-                browser.timeoutInterval
+                browser.params.timeoutInterval
             );
     } catch (e) {
         error = e;

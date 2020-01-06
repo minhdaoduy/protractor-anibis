@@ -4,6 +4,7 @@ let jsonHelper = require('../../infrastructure/helpers/json.helper')
 
 class HomeFlows extends homePage.constructor {
     async directHomePage() {
+        await browser.logger.info("Start direct to home page");
         await browser.waitForAngularEnabled(false);
 
         await browser.logger.info("Access to home page");

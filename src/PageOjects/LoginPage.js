@@ -3,6 +3,7 @@ let eleEmailTextField = element(by.id('ctl00_phlContent_ctlEmailValidationBox_tx
 let eleContinueButton = element(by.id('ctl00_phlContent_ctlEmailValidationBox_lbtContinue'));
 let eleEmailErrorMessage = element(by.id('ctl00_phlContent_ctlEmailValidationBox_txtEmail-error'));
 let elePasswordTextField = element(by.id('ctl00_phlContent_txtPassword'));
+let elePasswordErrorMessage = element(by.id('ctl00_phlContent_txtPassword-error'));
 let eleLoginButton = element(by.id('ctl00_phlContent_btnLogin'));
 
 class LoginPage{
@@ -20,31 +21,31 @@ class LoginPage{
     }
 
     async inputEmailTextField(value) {
-        await actionHelper.sendKeyElement(eleEmailTextField, value, browser.expectConditionRetryTime);
+        await actionHelper.sendKeyElement(eleEmailTextField, value, browser.params.expectConditionRetryTime);
     }
 
     async clickEmailTextField(value) {
-        await actionHelper.clickElementClickable(eleEmailTextField, browser.expectConditionRetryTime);
+        await actionHelper.clickElementClickable(eleEmailTextField, browser.params.expectConditionRetryTime);
     }
 
     async clickContinueButton() {
-        await actionHelper.clickElementClickable(eleContinueButton, browser.expectConditionRetryTime);
+        await actionHelper.clickElementClickable(eleContinueButton, browser.params.expectConditionRetryTime);
     }
 
-    getEmailErrorMessage() {
-        return eleEmailErrorMessage.getText();
+    async getEmailErrorMessage() {
+        return (await eleEmailErrorMessage.getText()).trim();
     }
 
-    getPasswordErrorMessage() {
-        return eleEmailErrorMessage.getText();
+    async getPasswordErrorMessage() {
+        return (await elePasswordErrorMessage.getText()).trim();
     }
 
     async inputPassword(value) {
-        await actionHelper.sendKeyElement(elePasswordTextField, value, browser.expectConditionRetryTime);
+        await actionHelper.sendKeyElement(elePasswordTextField, value, browser.params.expectConditionRetryTime);
     }
 
     async clickLoginButton() {
-        await actionHelper.clickElementClickable(eleLoginButton, browser.expectConditionRetryTime);
+        await actionHelper.clickElementClickable(eleLoginButton, browser.params.expectConditionRetryTime);
     }
 
 };

@@ -10,8 +10,9 @@ let FILTER_OPTION = require("../PageOjects/GlobalVariables");
 describe("Automation testing anibis website: Login, Search", function () {
 
     beforeAll( async function () {
+        await browser.logger.info("Automation testing anibis website: Login, Search");
         await homeFlows.directHomePage();
-        await homeFlows.clickMyAnibisButton(browser.expectConditionRetryTime);
+        await homeFlows.clickMyAnibisButton(browser.params.expectConditionRetryTime);
     })
 
     it("Step 1: Verify Cursor. Expected: it starts at Username", async function () {
@@ -42,15 +43,16 @@ describe("Automation testing anibis website: Login, Search", function () {
         "\nExpected: Email Field has red background and show error", async function () {
         await browser.logger.info("======================= Start step 4 =======================");
         let email = jsonHelper.readTestData()['loginInfo'][0]['username'];
-        let password = jsonHelper.readTestData()['testData'][0]['incorrectPassword'];
+        let password = jsonHelper.readTestData()['testData']['incorrectPassword'];
         await loginFlows.inputEmailPasswordAndClickLogin(email, password);
-        await loginFlows.verifyBackGroundColorOfEmail(jsonHelper.readTestData()['testData']['errorColor']);
-        await loginFlows.verifyErrorMessageOfEmail(jsonHelper.readTestData()['errorMessages']['inputIncorrectEmail_ErrorMessage'][browser.params.language]);
+        await loginFlows.verifyBackGroundColorOfPassword(jsonHelper.readTestData()['testData']['errorColor']);
+        await loginFlows.verifyErrorMessageOfPassword(jsonHelper.readTestData()['errorMessages']['inputIncorrectPassword_ErrorMessage'][browser.params.language]);
     });
 
     it("Step 5: Login successfully." +
         "\nExpected: Login with correct email", async function () {
         await browser.logger.info("======================= Start step 5 =======================");
+        await browser.get(urlBuilder.getLoginURL());
         let email = jsonHelper.readTestData()['loginInfo'][0]['username'];
         let password = jsonHelper.readTestData()['loginInfo'][0]['password'];
         await loginFlows.inputEmailPasswordAndClickLogin(email, password);
@@ -84,7 +86,5 @@ describe("Automation testing anibis website: Login, Search", function () {
         await searchFlows.sortByOption(FILTER_OPTION.DATE)
         await searchFlows.verifySortingOfResultList(FILTER_OPTION.DATE)
     });
-
-
 });
 

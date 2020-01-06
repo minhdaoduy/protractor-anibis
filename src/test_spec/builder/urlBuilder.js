@@ -1,6 +1,8 @@
 let jsonHelper = require('../../../infrastructure/helpers/json.helper');
 let baseURL = jsonHelper.readConfig('baseURL');
 
+const LANGUAGE = 'lng';
+
 class URLBuilder {
 
     getNormalURL(uri) {
@@ -28,7 +30,11 @@ class URLBuilder {
     }
 
     getProfileURL() {
-        return this.getMemberURL(jsonHelper.readConfig('profileURI'), {"lng":browser.params.language});
+        return this.getMemberURL(jsonHelper.readConfig('profileURI'), {LANGUAGE:browser.params.language});
+    }
+
+    getLoginURL() {
+        return this.getNormalURL(jsonHelper.readConfig('loginURI'));
     }
 };
 module.exports = new URLBuilder();

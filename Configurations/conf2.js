@@ -20,12 +20,12 @@ exports.config = {
         browser.driver.manage().window().maximize();
 
         //config for timeout interval
-        if (browser.timeoutInterval === undefined)
-            browser.timeoutInterval = 5000;
+        if (browser.params.timeoutInterval === undefined)
+            browser.params.timeoutInterval = 3000;
 
         //config for default try time
-        if (browser.expectConditionRetryTime === undefined)
-            browser.expectConditionRetryTime = 20;
+        if (browser.params.expectConditionRetryTime === undefined)
+            browser.params.expectConditionRetryTime = 20;
 
         //Init and Add logger into browser
         browser.logger = log4js.getLogger('Logger');
@@ -33,6 +33,8 @@ exports.config = {
         //default language
         if (browser.params.language === undefined)
             browser.params.language = jsonHelper.readConfig('defaultLanguage');
+
+        await browser.logger.info("START AUTOMATION TESTING WITH LANGUAGE: " + browser.params.language)
     },
 
     jasmineNodeOpts: {
