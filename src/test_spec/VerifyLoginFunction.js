@@ -67,7 +67,7 @@ describe("Automation testing anibis website: Login, Search", function () {
         await browser.logger.info("======================= Start step 6 =======================");
         await browser.get(urlBuilder.getSearchURL());
 
-        await searchFlows.clickCategoryItemByName(jsonHelper.readTestData()['testData']['category'][browser.params.language]);
+        await searchFlows.clickCategoryItemByName(jsonHelper.readTestData()['categories']['Immovable'][browser.params.language]);
 
         await searchFlows.inputPriceFrom(jsonHelper.readTestData()['testData']['price']['from']);
         await searchFlows.inputPriceTo(jsonHelper.readTestData()['testData']['price']['to']);

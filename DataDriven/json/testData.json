@@ -10,11 +10,6 @@
     "errorColor": ["rgba(255, 255, 255, 1)","rgba(255, 236, 236, 1)"],
     "incorrectEmail": "incorrectEmail",
     "incorrectPassword": "incorrectPassword",
-    "category": {
-      "fr": "Immobilier",
-      "de": "Immobilien",
-      "it": "Immobili"
-    },
     "where": {
       "location": "Zurich",
       "distance": "10"
@@ -24,6 +19,13 @@
       "to": "5000"
     },
     "maximumTotalResultInAPage": 20
+  },
+  "categories": {
+    "Immovable": {
+      "fr": "Immobilier",
+      "de": "Immobilien",
+      "it": "Immobili"
+    }
   },
   "errorMessages": {
     "inputIncorrectEmail_ErrorMessage": {
