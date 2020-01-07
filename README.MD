@@ -1,27 +1,36 @@
 ## My note:
-* Step 2 does NOT include in the assessment, I just did more than require.
-* Handle multiple language also does NOT include in the assessment, I just want to do with the hope I will be get some plus point fro the interviewer
-* [verifySortingOfResultList] method still have not handle for sort price due to limit time, therefore I use else to throw error to void automation will pass this method when using with not handled sort type
+* Step 2 does NOT include in the assessment, I did more than require.
+* Handle multiple languages also does NOT include in the assessment, I just want to do with the hope I will be get some plus point from interviewers.
+* [verifySortingOfResultList] method still have not handle for sort price due to limit time, therefore I use else to throw error to void automation will pass this method without any action when using with not handled sort type
 * I would also script for a beautiful report if I have more time.
 * If I have more time, I'll overview all web pages as well as data to consider how I should separate testData.json to specialized .json files.
 But one thing I make sure will do - using better way to manage for multi languages.
 
 ## Setup:
 * Install [Node](http://nodejs.org) (v8.x.x or later)
+* Install java SDK and set java home
 * In project directory:
     * `npm install`
     * `npm install -g protractor`
-    * `webdriver-manager update` (recommended:  webdriver-manager update --versions.chrome=2.42)
-    * `webdriver-manager start` (recommended:  webdriver-manager start --versions.chrome=2.42)
+    * `webdriver-manager update` (recommended:  `webdriver-manager update --versions.chrome=2.42`)
+    * `webdriver-manager start` (recommended: ` webdriver-manager start --versions.chrome=2.42`)
     * `npm i` to install the project dependencies
 
 ## Run tests:
-* run tests by command line
-    1. `cd Configurations`
-    2. test multi-language
-        * German: `protractor conf2.js --params.language=de --params.expectConditionRetryTime=50 --params.timeoutInterval=3000`
-        * Italian: `protractor conf2.js --params.language=it --params.expectConditionRetryTime=50 --params.timeoutInterval=3000`
-        * French: `protractor conf2.js --params.language=fr --params.expectConditionRetryTime=50 --params.timeoutInterval=3000`
+* Run tests by command line
+    1. start webdriver: `webdriver-manager start --versions.chrome=2.42`
+    2. direct to directory of config file: `cd Configurations`
+    3. test multi-language with one of commands:
+        * German: `protractor conf2.js --params.language=de --params.expectConditionRetryTime=50 --params.timeoutInterval=5000`
+        * Italian: `protractor conf2.js --params.language=it --params.expectConditionRetryTime=50 --params.timeoutInterval=5000`
+        * French: `protractor conf2.js --params.language=fr --params.expectConditionRetryTime=50 --params.timeoutInterval=5000`
         
-*run tests via IntelliJ IDEA - Ultimate
+* Run tests via IntelliJ IDEA - Ultimate
+    1. start webdriver: `webdriver-manager start --versions.chrome=2.42`
+    2. Setup config
 ![_guidline/media/intelliJ_config.png](_guidline/media/intelliJ_config.png)
+    3. Click run button in top menu of IntelliJ or using short key `Shift + F10`
+    
+## Log files: 
+View log files in `root/reports`.
+(This folder will store reports in the future)

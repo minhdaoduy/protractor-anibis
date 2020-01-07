@@ -2,8 +2,6 @@ let logger = require('../infrastructure/util/logger.js');
 let jsonHelper = require('../infrastructure/helpers/json.helper');
 let log4js = require('log4js');
 exports.config = {
-    // directConnect: true,
-
     // Capabilities to be passed to the webdriver instance.
    capabilities: {
      'browserName': 'chrome'
@@ -34,7 +32,6 @@ exports.config = {
         if (browser.params.language === undefined)
             browser.params.language = jsonHelper.readConfig('defaultLanguage');
 
-        await browser.logger.info("START AUTOMATION TESTING WITH LANGUAGE: " + browser.params.language)
     },
 
     jasmineNodeOpts: {

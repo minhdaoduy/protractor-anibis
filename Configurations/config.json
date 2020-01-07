@@ -7,7 +7,6 @@
         "profileURI": "profile.aspx",
         "searchURI": "advertlist.aspx",
         "loginURI": "login.aspx",
-        "defaultTimeOut": "5000",
         "reportDir": "../reports"
     }
 }

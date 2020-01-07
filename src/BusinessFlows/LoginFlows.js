@@ -9,52 +9,74 @@ class LoginFlows extends Many(LoginPage.constructor, ProfilePage.constructor){
     async verifyEmailIsFocusing() {
         await browser.logger.info("Start verify cursor is focused to email field");
         if (await this.isEmailIsFocusing())
-            await browser.logger.info("The cursor is started at Email field");
-        else
+            await browser.logger.info("Passed: The cursor is started at Email field");
+        else {
+            await browser.logger.error("Failed: The cursor is NOT started at Email field")
             throw Error("The cursor is NOT started at Email field")
+        }
     };
 
     async verifyBackGroundColorOfEmail(expectBackGroundColorOfEmail) {
         await browser.logger.info("Start verify background color for email field");
         let backGroundColorOfEmail = await this.getBackGroundColorOfEmail();
         if (expectBackGroundColorOfEmail.includes(backGroundColorOfEmail))
-            await browser.logger.info("BackGround color of Email field is red");
-        else
+            await browser.logger.info("Passed: BackGround color of Email field is red");
+        else {
+            await browser.logger.error("Failed: BackGround color of Email field is NOT red" +
+                "\nExpected: " + expectBackGroundColorOfEmail +
+                "\nActual: " + backGroundColorOfEmail);
             throw Error("BackGround color of Email field is NOT red" +
                 "\nExpected: " + expectBackGroundColorOfEmail +
                 "\nActual: " + backGroundColorOfEmail);
+        }
+
     };
 
     async verifyErrorMessageOfEmail(expectedMessage) {
         let emailErrorMessage = await this.getEmailErrorMessage();
         if (emailErrorMessage === expectedMessage)
-            await browser.logger.info("Message of email is correct");
-        else
+            await browser.logger.info("Passed: Message of email is correct");
+        else {
+            await browser.logger.error("Failed: Message of email is NOT correct" +
+                "\nExpected: " + expectedMessage +
+                "\nActual: " + emailErrorMessage);
             throw Error("Message of email is NOT correct" +
                 "\nExpected: " + expectedMessage +
                 "\nActual: " + emailErrorMessage);
+        }
+
     };
 
     async verifyBackGroundColorOfPassword(expectBackGroundColorOfPassword) {
         await browser.logger.info("Start verify background color for password field");
         let backGroundColorOfPassword = await this.getBackGroundColorOfPassword();
         if (expectBackGroundColorOfPassword.includes(backGroundColorOfPassword))
-            await browser.logger.info("BackGround color of Email field is red");
-        else
+            await browser.logger.info("Passed: BackGround color of Email field is red");
+        else {
+            await browser.logger.error("Failed: BackGround color of Email field is NOT red" +
+                "\nExpected: " + expectBackGroundColorOfPassword +
+                "\nActual: " + backGroundColorOfPassword);
             throw Error("BackGround color of Email field is NOT red" +
                 "\nExpected: " + expectBackGroundColorOfPassword +
                 "\nActual: " + backGroundColorOfPassword);
+        }
+
     };
 
     async verifyErrorMessageOfPassword(expectedMessage) {
         await browser.logger.info("Start verify error message of password field");
         let emailErrorMessage = await this.getPasswordErrorMessage();
         if (emailErrorMessage === expectedMessage)
-            await browser.logger.info("Message of email is correct");
-        else
+            await browser.logger.info("Passed: Message of email is correct");
+        else {
+            await browser.logger.error("Failed: Message of email is NOT correct" +
+                "\nExpected: " + expectedMessage +
+                "\nActual: " + emailErrorMessage);
             throw Error("Message of email is NOT correct" +
                 "\nExpected: " + expectedMessage +
                 "\nActual: " + emailErrorMessage);
+        }
+
     };
 
     async verifyLoginWithCorrectEmail(expectedEmail) {
@@ -62,17 +84,26 @@ class LoginFlows extends Many(LoginPage.constructor, ProfilePage.constructor){
         await browser.get(urlBuilder.getProfileURL());
         let actualEmail = await this.getEmail();
         if (actualEmail === expectedEmail)
-            await browser.logger.info("Login with correct email");
-        else
+            await browser.logger.info("Passed: Login with correct email");
+        else {
+            await browser.logger.error("Failed: Login with incorrect email");
             throw Error("Login with incorrect email");
+        }
+
     };
 
     async inputEmailPasswordAndClickLogin(email, password) {
         await browser.logger.info("Start input email, click continue, input password and click login");
-        await this.inputEmailTextField(email);
-        await this.clickContinueButton();
-        await this.inputPassword(password);
-        await this.clickLoginButton();
+        try {
+            await this.inputEmailTextField(email);
+            await this.clickContinueButton();
+            await this.inputPassword(password);
+            await this.clickLoginButton();
+            await browser.logger.info("Completed input email, password and click login button");
+        } catch (e) {
+            await browser.logger.error("Failed: when input email, password and click login button. Error:" + e);
+            throw Error("Failed: when input email, password and click login button. Error:" + e);
+        }
     };
 };
 module.exports = new LoginFlows();

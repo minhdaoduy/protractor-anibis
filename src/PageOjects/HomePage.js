@@ -1,5 +1,6 @@
 let actionHelper = require('../../infrastructure/helpers/action.helper')
-// //locators
+
+//elements
 let eleMyAnibisButton = element(by.id('ctl00_Header1_ctlHeaderMetaBar_ucMainLinks_liMyListing'));
 let eleSearchButton = element(by.id("ctl00_phlContent_ctlHeaderSearchFilter_ctlKeywordAutocomplete_btnSearch"));
 let eleProfileButton = element(by.xpath("//div[@id='ctl00_Header1_ctlHeaderActionBar_ctlMemberNavigation_divHeaderMenu']//a[contains(@href,'/profile.aspx')]"));

@@ -3,7 +3,7 @@ let urlBuilder = require('../test_spec/builder/urlBuilder')
 let jsonHelper = require('../../infrastructure/helpers/json.helper')
 
 class HomeFlows extends homePage.constructor {
-    async directHomePage() {
+    async startWithHomePage() {
         await browser.logger.info("Start direct to home page");
         await browser.waitForAngularEnabled(false);
 

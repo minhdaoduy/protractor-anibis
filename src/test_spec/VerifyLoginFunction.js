@@ -11,7 +11,7 @@ describe("Automation testing anibis website: Login, Search", function () {
 
     beforeAll( async function () {
         await browser.logger.info("Automation testing anibis website: Login, Search");
-        await homeFlows.directHomePage();
+        await homeFlows.startWithHomePage();
         await homeFlows.clickMyAnibisButton(browser.params.expectConditionRetryTime);
     })
 

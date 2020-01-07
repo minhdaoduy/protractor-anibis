@@ -1,4 +1,5 @@
 let actionHelper = require('../../infrastructure/helpers/action.helper')
+
 //locators
 let lblEmail = element(by.xpath("//div[@class='page-segment page-segment-detail-data']/div[2]//*[@class='semibold']"));
 

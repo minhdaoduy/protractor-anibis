@@ -1,4 +1,6 @@
 let actionHelper = require('../../infrastructure/helpers/action.helper');
+
+//
 let eleEmailTextField = element(by.id('ctl00_phlContent_ctlEmailValidationBox_txtEmail'));
 let eleContinueButton = element(by.id('ctl00_phlContent_ctlEmailValidationBox_lbtContinue'));
 let eleEmailErrorMessage = element(by.id('ctl00_phlContent_ctlEmailValidationBox_txtEmail-error'));

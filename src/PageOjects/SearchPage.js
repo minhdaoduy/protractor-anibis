@@ -12,11 +12,6 @@ let eleWhereApplyButton = element(by.xpath("//div[@data-chip-target='where']//*[
 let eleItemList = element.all(by.xpath("//li[@class='list-item listing' or @class='list-item listing highlight']"));
 let eleItemDateList = element.all(by.xpath("//li[@class='list-item listing' or @class='list-item listing highlight']//li[@class='horizontal-list-item item-date']"));
 let eleFilterDropdown = element(by.id("ctl00_phlContent_ResList_ddlSorting"));
-const FILTER_OPTION = {
-    "DATE": 'dpo|d',
-    "ASCENDING_PRICE": 'pri|a',
-    "DECREASING_PRICE": 'pri|d'
-};
 
 class SearchPage extends commonObjects.constructor{
 
