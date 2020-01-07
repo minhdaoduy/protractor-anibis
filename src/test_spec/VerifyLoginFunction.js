@@ -7,6 +7,10 @@ let loginFlows = require("../BusinessFlows/LoginFlows");
 let searchFlows = require("../BusinessFlows/SearchFlows");
 let FILTER_OPTION = require("../PageOjects/GlobalVariables");
 
+//global variables
+let email = jsonHelper.readTestData()['loginInfo'][0]['username'];
+let password = jsonHelper.readTestData()['testData']['incorrectPassword'];
+
 describe("Automation testing anibis website: Login, Search", function () {
 
     beforeAll( async function () {
@@ -21,7 +25,6 @@ describe("Automation testing anibis website: Login, Search", function () {
         await loginFlows.verifyEmailIsFocusing();
     });
 
-    // this step does NOT include in the assessment
     it("Step 2: Leave empty for email field then click continue button." +
         "\nExpected: Email Field has red background and show error", async function () {
     await browser.logger.info("======================= Start Step 2 =======================");
@@ -39,27 +42,34 @@ describe("Automation testing anibis website: Login, Search", function () {
         await loginFlows.verifyErrorMessageOfEmail(jsonHelper.readTestData()['errorMessages']['inputIncorrectEmail_ErrorMessage'][browser.params.language]);
     });
 
-    it("Step 4: Submit incorrect data for password field then click login button." +
+    it("Step 4: missing input password field then click login button." +
         "\nExpected: Email Field has red background and show error", async function () {
         await browser.logger.info("======================= Start step 4 =======================");
-        let email = jsonHelper.readTestData()['loginInfo'][0]['username'];
-        let password = jsonHelper.readTestData()['testData']['incorrectPassword'];
-        await loginFlows.inputEmailPasswordAndClickLogin(email, password);
+        await loginFlows.inputEmailTextField(email);
+        await loginFlows.clickContinueButton();
+        await loginFlows.clickLoginButton();
+        await loginFlows.verifyBackGroundColorOfPassword(jsonHelper.readTestData()['testData']['errorColor']);
+        await loginFlows.verifyErrorMessageOfPassword(jsonHelper.readTestData()['errorMessages']['notInputPassword_ErrorMessage'][browser.params.language]);
+    });
+
+    it("Step 5: Submit incorrect data for password field then click login button." +
+        "\nExpected: Email Field has red background and show error", async function () {
+        await browser.logger.info("======================= Start step 4 =======================");
+        await loginFlows.inputPassword(jsonHelper.readTestData()['testData']['incorrectPassword']);
+        await loginFlows.clickLoginButton();
         await loginFlows.verifyBackGroundColorOfPassword(jsonHelper.readTestData()['testData']['errorColor']);
         await loginFlows.verifyErrorMessageOfPassword(jsonHelper.readTestData()['errorMessages']['inputIncorrectPassword_ErrorMessage'][browser.params.language]);
     });
 
-    it("Step 5: Login successfully." +
+    it("Step 6: Login successfully." +
         "\nExpected: Login with correct email", async function () {
         await browser.logger.info("======================= Start step 5 =======================");
         await browser.get(urlBuilder.getLoginURL());
-        let email = jsonHelper.readTestData()['loginInfo'][0]['username'];
-        let password = jsonHelper.readTestData()['loginInfo'][0]['password'];
         await loginFlows.inputEmailPasswordAndClickLogin(email, password);
         await loginFlows.verifyLoginWithCorrectEmail(email);
     });
 
-    it("Step 6: Perform a search with:\n" +
+    it("Step 7: Perform a search with:\n" +
         "a. Immobilien category\n" +
         "b. Location Zurich, 10km\n" +
         "c. Price from 1000 to 5000.\n" +
@@ -80,7 +90,7 @@ describe("Automation testing anibis website: Login, Search", function () {
         await searchFlows.verifyTotalResultInCurrentPage(jsonHelper.readTestData()['testData']['maximumTotalResultInAPage'])
     });
 
-    it("Step 7: Sort result list by date\n" +
+    it("Step 8: Sort result list by date\n" +
         "Expected: Make sure that the first 20 items are correctly sorted.", async function () {
         await browser.logger.info("======================= Start step 7 =======================");
         await searchFlows.sortByOption(FILTER_OPTION.DATE)

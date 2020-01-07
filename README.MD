@@ -1,5 +1,4 @@
 ## My note:
-* Step 2 does NOT include in the assessment, I did more than require.
 * Handle multiple languages also does NOT include in the assessment, I just want to do with the hope I will be get some plus point from interviewers.
 * [verifySortingOfResultList] method still have not handle for sort price due to limit time, therefore I use else to throw error to void automation will pass this method without any action when using with not handled sort type
 * I would also script for a beautiful report if I have more time.

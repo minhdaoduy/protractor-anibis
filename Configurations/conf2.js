@@ -19,11 +19,11 @@ exports.config = {
 
         //config for timeout interval
         if (browser.params.timeoutInterval === undefined)
-            browser.params.timeoutInterval = 3000;
+            browser.params.timeoutInterval = 500;
 
         //config for default try time
         if (browser.params.expectConditionRetryTime === undefined)
-            browser.params.expectConditionRetryTime = 20;
+            browser.params.expectConditionRetryTime = 100;
 
         //Init and Add logger into browser
         browser.logger = log4js.getLogger('Logger');
@@ -37,8 +37,6 @@ exports.config = {
     jasmineNodeOpts: {
         // If true, print colors to the terminal.
         showColors: true,
-        // Default time to wait in ms before a test fails.
-        defaultTimeoutInterval: 9999999,
     }
 
 

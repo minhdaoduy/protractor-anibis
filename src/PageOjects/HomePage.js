@@ -1,9 +1,9 @@
 let actionHelper = require('../../infrastructure/helpers/action.helper')
 
 //elements
-let eleMyAnibisButton = element(by.id('ctl00_Header1_ctlHeaderMetaBar_ucMainLinks_liMyListing'));
-let eleSearchButton = element(by.id("ctl00_phlContent_ctlHeaderSearchFilter_ctlKeywordAutocomplete_btnSearch"));
-let eleProfileButton = element(by.xpath("//div[@id='ctl00_Header1_ctlHeaderActionBar_ctlMemberNavigation_divHeaderMenu']//a[contains(@href,'/profile.aspx')]"));
+let eleMyAnibisButton = element(by.id('ctl00_Header1_ctlHeaderMetaBar_ucMainLinks_liMyListing')),
+    eleSearchButton = element(by.id("ctl00_phlContent_ctlHeaderSearchFilter_ctlKeywordAutocomplete_btnSearch")),
+    eleProfileButton = element(by.xpath("//div[@id='ctl00_Header1_ctlHeaderActionBar_ctlMemberNavigation_divHeaderMenu']//a[contains(@href,'/profile.aspx')]"));
 
 class HomePage extends actionHelper.constructor{
     async clickMyAnibisButton(tryTime) {

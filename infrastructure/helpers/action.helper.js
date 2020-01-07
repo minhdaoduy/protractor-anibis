@@ -57,7 +57,7 @@ ActionHelper.prototype.expectedConditions = async function (webElement, expected
 //wait element for element clickable, then click
 ActionHelper.prototype.clickElementClickable = async function (webElement, tryTime = browser.params.expectConditionRetryTime) {
     let error = '';
-    for (let i = 0; i < tryTime; i+=500) {
+    for (let i = 0; i < tryTime; i++) {
         try {
             await this.waitForElementToBeClickable(webElement);
             await webElement.click();
@@ -76,7 +76,7 @@ ActionHelper.prototype.clickElementClickable = async function (webElement, tryTi
 //wait element for element presence, then click
 ActionHelper.prototype.clickElementPresence = async function (webElement, tryTime = browser.params.expectConditionRetryTime) {
     let error = '';
-    for (let i = 0; i < tryTime; i+=500) {
+    for (let i = 0; i < tryTime; i++) {
         try {
             await this.waitForPresenceOf(webElement);
             await webElement.click();
@@ -95,7 +95,7 @@ ActionHelper.prototype.clickElementPresence = async function (webElement, tryTim
 //wait element for element visible, then input
 ActionHelper.prototype.sendKeyElement = async function (webElement, text, tryTime = browser.params.expectConditionRetryTime) {
     let error = '';
-    for (let i = 0; i < tryTime; i+=500) {
+    for (let i = 0; i < tryTime; i++) {
         try {
             await this.waitForVisibilityOf(webElement);
             await webElement.clear();

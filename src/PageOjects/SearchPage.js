@@ -2,16 +2,16 @@ let actionHelper = require('../../infrastructure/helpers/action.helper');
 let commonObjects = require('./CommonObjects');
 
 //xpath and elements
-let categoryNameXpathString = "//span[@class='category-name' and normalize-space(.)='{0}']";
-let elePriceFromTextField = element(by.id("ctl00_phlContent_Filter_ctlPriceRange_txtFrom"));
-let elePriceToTextField = element(by.id("ctl00_phlContent_Filter_ctlPriceRange_txtTo"));
-let eleLocationTextField = element(by.id("ctl00_phlContent_Filter_ctlLocation_ctlLocationAutocomplete_divLocation"));
-let eleDistanceDropDown = element(by.id("ctl00_phlContent_Filter_ctlLocation_ddlDistance"));
-let elePriceApplyButton = element(by.xpath("//div[@data-chip-target='price']//*[@class='button-text']"));
-let eleWhereApplyButton = element(by.xpath("//div[@data-chip-target='where']//*[@class='button-text']"));
-let eleItemList = element.all(by.xpath("//li[@class='list-item listing' or @class='list-item listing highlight']"));
-let eleItemDateList = element.all(by.xpath("//li[@class='list-item listing' or @class='list-item listing highlight']//li[@class='horizontal-list-item item-date']"));
-let eleFilterDropdown = element(by.id("ctl00_phlContent_ResList_ddlSorting"));
+let categoryNameXpathString = "//span[@class='category-name' and normalize-space(.)='{0}']",
+    elePriceFromTextField = element(by.id("ctl00_phlContent_Filter_ctlPriceRange_txtFrom")),
+    elePriceToTextField = element(by.id("ctl00_phlContent_Filter_ctlPriceRange_txtTo")),
+    eleLocationTextField = element(by.id("ctl00_phlContent_Filter_ctlLocation_ctlLocationAutocomplete_divLocation")),
+    eleDistanceDropDown = element(by.id("ctl00_phlContent_Filter_ctlLocation_ddlDistance")),
+    elePriceApplyButton = element(by.xpath("//div[@data-chip-target='price']//*[@class='button-text']")),
+    eleWhereApplyButton = element(by.xpath("//div[@data-chip-target='where']//*[@class='button-text']")),
+    eleItemList = element.all(by.xpath("//li[@class='list-item listing' or @class='list-item listing highlight']")),
+    eleItemDateList = element.all(by.xpath("//li[@class='list-item listing' or @class='list-item listing highlight']//li[@class='horizontal-list-item item-date']")),
+    eleFilterDropdown = element(by.id("ctl00_phlContent_ResList_ddlSorting"));
 
 class SearchPage extends commonObjects.constructor{
 

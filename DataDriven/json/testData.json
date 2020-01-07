@@ -42,6 +42,11 @@
       "fr": "Ce mot de passe n’est pas valide. Mot de passe oublié?",
       "de": "Dieses Passwort ist nicht gültig. Passwort vergessen?",
       "it": "Questa password non è valida. Password dimenticata?"
+    },
+    "notInputPassword_ErrorMessage": {
+      "fr": "N’oubliez pas cette information",
+      "de": "Vergessen Sie diese Angabe nicht",
+      "it": "Non si dimentichi questa informazione"
     }
   }
 }

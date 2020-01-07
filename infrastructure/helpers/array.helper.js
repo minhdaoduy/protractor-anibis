@@ -52,8 +52,8 @@ class ArrayHelper {
 
     static sortArrayDateDecreasing (array) {
         return array.sort(function (a, b) {
-            var aa = a.split('.').reverse().join(),
-                bb = b.split('.').reverse().join();
+            var aa = new Date(a.split('.').reverse().join()),
+                bb = new Date(b.split('.').reverse().join());
             return aa > bb ? -1 : (aa < bb ? 1 : 0);
         })
     }

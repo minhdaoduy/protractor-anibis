@@ -2,6 +2,7 @@ let jsonHelper = require('../../../infrastructure/helpers/json.helper');
 let baseURL = jsonHelper.readConfig('baseURL');
 
 const LANGUAGE = 'lng';
+const MEMBER = 'member';
 
 class URLBuilder {
 
@@ -10,7 +11,7 @@ class URLBuilder {
     }
 
     getMemberURL(uri, mapParams = {}) {
-        let URL = baseURL + "/member" + "/" + uri;
+        let URL = baseURL + "/" + MEMBER + "/" + uri;
         if (JSON.stringify(mapParams) === "{}")
             return URL;
         else {

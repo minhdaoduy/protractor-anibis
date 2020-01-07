@@ -1,12 +1,12 @@
 let actionHelper = require('../../infrastructure/helpers/action.helper');
 
 //
-let eleEmailTextField = element(by.id('ctl00_phlContent_ctlEmailValidationBox_txtEmail'));
-let eleContinueButton = element(by.id('ctl00_phlContent_ctlEmailValidationBox_lbtContinue'));
-let eleEmailErrorMessage = element(by.id('ctl00_phlContent_ctlEmailValidationBox_txtEmail-error'));
-let elePasswordTextField = element(by.id('ctl00_phlContent_txtPassword'));
-let elePasswordErrorMessage = element(by.id('ctl00_phlContent_txtPassword-error'));
-let eleLoginButton = element(by.id('ctl00_phlContent_btnLogin'));
+let eleEmailTextField = element(by.id('ctl00_phlContent_ctlEmailValidationBox_txtEmail')),
+    eleContinueButton = element(by.id('ctl00_phlContent_ctlEmailValidationBox_lbtContinue')),
+    eleEmailErrorMessage = element(by.id('ctl00_phlContent_ctlEmailValidationBox_txtEmail-error')),
+    elePasswordTextField = element(by.id('ctl00_phlContent_txtPassword')),
+    elePasswordErrorMessage = element(by.id('ctl00_phlContent_txtPassword-error')),
+    eleLoginButton = element(by.id('ctl00_phlContent_btnLogin'));
 
 class LoginPage{
 
