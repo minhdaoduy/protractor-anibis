@@ -23,15 +23,15 @@ class LoginPage{
     }
 
     async inputEmailTextField(value) {
-        await actionHelper.sendKeyElement(eleEmailTextField, value, browser.params.expectConditionRetryTime);
+        await actionHelper.sendKeyElement(eleEmailTextField, value);
     }
 
     async clickEmailTextField(value) {
-        await actionHelper.clickElementClickable(eleEmailTextField, browser.params.expectConditionRetryTime);
+        await actionHelper.clickElementClickable(eleEmailTextField);
     }
 
     async clickContinueButton() {
-        await actionHelper.clickElementClickable(eleContinueButton, browser.params.expectConditionRetryTime);
+        await actionHelper.clickElementClickable(eleContinueButton);
     }
 
     async getEmailErrorMessage() {
@@ -43,11 +43,11 @@ class LoginPage{
     }
 
     async inputPassword(value) {
-        await actionHelper.sendKeyElement(elePasswordTextField, value, browser.params.expectConditionRetryTime);
+        await actionHelper.sendKeyElement(elePasswordTextField, value);
     }
 
     async clickLoginButton() {
-        await actionHelper.clickElementClickable(eleLoginButton, browser.params.expectConditionRetryTime);
+        await actionHelper.clickElementClickable(eleLoginButton);
     }
 
 };

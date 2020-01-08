@@ -9,7 +9,7 @@ let FILTER_OPTION = require("../PageOjects/GlobalVariables");
 
 //global variables
 let email = jsonHelper.readTestData()['loginInfo'][0]['username'];
-let password = jsonHelper.readTestData()['testData']['incorrectPassword'];
+let password = jsonHelper.readTestData()['loginInfo'][0]['password'];
 
 describe("Automation testing anibis website: Login, Search", function () {
 
@@ -27,7 +27,7 @@ describe("Automation testing anibis website: Login, Search", function () {
 
     it("Step 2: Leave empty for email field then click continue button." +
         "\nExpected: Email Field has red background and show error", async function () {
-    await browser.logger.info("======================= Start Step 2 =======================");
+        await browser.logger.info("======================= Start Step 2 =======================");
         await loginFlows.clickContinueButton();
         await loginFlows.verifyBackGroundColorOfEmail(jsonHelper.readTestData()['testData']['errorColor']);
         await loginFlows.verifyErrorMessageOfEmail(jsonHelper.readTestData()['errorMessages']['notInputEmail_ErrorMessage'][browser.params.language]);
@@ -64,8 +64,8 @@ describe("Automation testing anibis website: Login, Search", function () {
     it("Step 6: Login successfully." +
         "\nExpected: Login with correct email", async function () {
         await browser.logger.info("======================= Start step 5 =======================");
-        await loginFlows.inputPassword(password);
-        await loginFlows.clickLoginButton();
+        await browser.get(urlBuilder.getLoginURL());
+        await loginFlows.inputEmailPasswordAndClickLogin(email, password)
         await loginFlows.verifyLoginWithCorrectEmail(email);
     });
 

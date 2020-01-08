@@ -19,7 +19,7 @@ exports.config = {
 
         //config for timeout interval
         if (browser.params.timeoutInterval === undefined)
-            browser.params.timeoutInterval = 500;
+            browser.params.timeoutInterval = 5000;
 
         //config for default try time
         if (browser.params.expectConditionRetryTime === undefined)
@@ -37,6 +37,7 @@ exports.config = {
     jasmineNodeOpts: {
         // If true, print colors to the terminal.
         showColors: true,
+        defaultTimeoutInterval: 99999999
     }
 
 

@@ -65,7 +65,7 @@ ActionHelper.prototype.clickElementClickable = async function (webElement, tryTi
             break;
         } catch (e) {
             error = e;
-            await browser.sleep(500);
+            await browser.sleep(browser.params.timeoutInterval);
         }
         if (error !== '')
             throw error;
@@ -84,7 +84,7 @@ ActionHelper.prototype.clickElementPresence = async function (webElement, tryTim
             break;
         } catch (e) {
             error = e;
-            await browser.sleep(500);
+            await browser.sleep(browser.params.timeoutInterval);
         }
         if (error !== '')
             throw error;
@@ -104,7 +104,7 @@ ActionHelper.prototype.sendKeyElement = async function (webElement, text, tryTim
             break;
         } catch (e) {
             error = e;
-            await browser.sleep(500);
+            await browser.sleep(browser.params.timeoutInterval);
         }
     }
     if (error !== '')
