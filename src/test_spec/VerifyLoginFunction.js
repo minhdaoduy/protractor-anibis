@@ -64,8 +64,8 @@ describe("Automation testing anibis website: Login, Search", function () {
     it("Step 6: Login successfully." +
         "\nExpected: Login with correct email", async function () {
         await browser.logger.info("======================= Start step 5 =======================");
-        await browser.get(urlBuilder.getLoginURL());
-        await loginFlows.inputEmailPasswordAndClickLogin(email, password);
+        await loginFlows.inputPassword(password);
+        await loginFlows.clickLoginButton();
         await loginFlows.verifyLoginWithCorrectEmail(email);
     });
 

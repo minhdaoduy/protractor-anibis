@@ -66,6 +66,14 @@ class ArrayHelper {
         })
     }
 
+    /**
+     * Des: get type of sort from array
+     * @array: array with all items are date you want to get sort type
+     * Return:
+     *  - Decreasing: if array is sorted by decreasing
+     *  - Ascending: if array is sorted by ascending
+     *  - Non-sorting: if array is NOT sorted
+    * */
     static getTypeOfSortFromArrayDate (array) {
         if (JSON.stringify(this.sortArrayDateDecreasing([...array])) === JSON.stringify(array))
             return "Decreasing";

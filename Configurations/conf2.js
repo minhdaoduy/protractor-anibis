@@ -23,7 +23,7 @@ exports.config = {
 
         //config for default try time
         if (browser.params.expectConditionRetryTime === undefined)
-            browser.params.expectConditionRetryTime = 100;
+            browser.params.expectConditionRetryTime = 1000;
 
         //Init and Add logger into browser
         browser.logger = log4js.getLogger('Logger');

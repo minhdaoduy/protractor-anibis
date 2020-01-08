@@ -61,10 +61,8 @@ class SearchFlows extends searchPage.constructor{
                 await browser.logger.info("Passed: Total result in current page is as expectation: ");
             else {
                 await browser.logger.error("Failed: Total result in current page is NOT as expectation: " +
-                    "\nExpected: " + expectedDateList +
                     "\nActual: " + actualDateList);
                 throw Error("Total result in current page is NOT as expectation: " +
-                    "\nExpected: " + expectedDateList +
                     "\nActual: " + actualDateList);
             }
 
