@@ -26,7 +26,7 @@
     "jasmine-data-provider": "^2.2.0",
     "jasmine-reporters": "^2.3.2",
     "jasminewd2": "^2.1.0",
-    "log4js": "^4.3.0",
+    "log4js": "^6.4.0",
     "log4js-protractor-appender": "^1.1.2",
     "optimist": "~0.6.0",
     "path": "^0.12.7",
