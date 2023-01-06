@@ -65,7 +65,7 @@
     "rimraf": "~2.5.3",
     "run-sequence": "^1.1.5",
     "semver": "^5.3.0",
-    "testcafe": "^0.13.0",
+    "testcafe": "^2.2.0",
     "tslint": "^4.1.1",
     "tslint-eslint-rules": "^3.1.0",
     "typescript": "^2.1.5",
